@@ -175,7 +175,7 @@ function initDashboardSidebar() {
    DASHBOARD THEME & RTL CONTROLLER
    ========================================================================== */
 function initDashboardThemeAndRTL() {
-  const savedTheme = localStorage.getItem("bh_theme") || "light";
+  const savedTheme = localStorage.getItem("bh_theme") || "dark";
   const savedDir = localStorage.getItem("bh_dir") || "ltr";
 
   document.documentElement.setAttribute("data-theme", savedTheme);

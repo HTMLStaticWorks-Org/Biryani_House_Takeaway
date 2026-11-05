@@ -1006,7 +1006,7 @@ const AppState = {
 
 
 
-  theme: localStorage.getItem("bh_theme") || "light",
+  theme: localStorage.getItem("bh_theme") || "dark",
 
 
 
