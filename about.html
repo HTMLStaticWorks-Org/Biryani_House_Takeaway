@@ -1,0 +1,742 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon (Brand Logo Mark) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <title>Our Story | Biryani House & Takeaway</title>
+  <meta name="description" content="Discover the culinary passion, authentic spices, and slow dum cooking methods behind Biryani House & Takeaway. Our kitchen, philosophy, and unwavering quality promise.">
+  <meta property="og:title" content="Our Story | Biryani House & Takeaway">
+  <meta property="og:description" content="Our story is cooked into every layer. Slow-cooked with tradition, served with love.">
+  <meta property="og:image" content="assets/images/chef-dum.jpg">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+        <header class="site-header" id="siteHeader">
+    <div class="container navbar-inner">
+      <!-- Left: Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Biryani House Home">
+        <div class="brand-logo-mark">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+            <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+            <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="brand-name">BIRYANI HOUSE</span>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <!-- Home Dropdown Menu -->
+        <div class="nav-dropdown">
+          <a href="index.html" class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down nav-dropdown-chevron"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html" class="nav-dropdown-item">
+              <div class="dropdown-item-badge"><i class="bi bi-house-door-fill"></i></div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Home 1 &mdash; Traditional</span>
+                <span class="dropdown-item-sub">Classic Handi &amp; Heritage Dum</span>
+              </div>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item">
+              <div class="dropdown-item-badge"><i class="bi bi-fire"></i></div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Home 2 &mdash; Contemporary</span>
+                <span class="dropdown-item-sub">Modern Charcoal &amp; Live Ordering</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="party-orders.html" class="nav-link">Party Orders</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <!-- Right: Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle (Desktop Only) -->
+        <button class="icon-btn theme-toggle-btn desktop-only-control" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <!-- RTL Toggle (Desktop Only) -->
+        <button class="icon-btn rtl-toggle-btn desktop-only-control" title="Toggle RTL Layout" aria-label="Toggle RTL">
+          RTL
+        </button>
+
+        <!-- Cart Drawer Toggle (Desktop Only) -->
+        <button class="icon-btn cart-toggle-btn desktop-only-control" title="View Cart" aria-label="View Cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge cart-count-badge">3</span>
+        </button>
+
+        <!-- Customer Login Link (Desktop Only) -->
+        <a href="login.html" class="icon-btn desktop-only-control" title="Customer Login" aria-label="Customer Login">
+          <i class="bi bi-person"></i>
+        </a>
+
+        <!-- Order Now CTA (Desktop Only) -->
+        <a href="menu.html" class="btn btn-primary nav-order-btn desktop-only-control">
+          <i class="bi bi-bag-check-fill" style="margin-right: 6px;"></i>ORDER NOW
+        </a>
+
+        <!-- Mobile Hamburger Toggle (Tablet & Mobile Header Only) -->
+        <button class="icon-btn mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <i class="bi bi-list" style="font-size: 1.4rem;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay (Rule 9) -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-logo-mark">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+            <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+            <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="brand-name">BIRYANI HOUSE</span>
+      </div>
+      <button class="icon-btn mobile-drawer-close" aria-label="Close Mobile Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation items (clean list, no extra row above Home) -->
+    <nav class="mobile-nav-list">
+      <!-- Mobile Home Accordion Submenu -->
+      <div class="mobile-nav-accordion">
+        <button class="mobile-nav-link mobile-accordion-trigger" aria-expanded="false">
+          <span>Home</span>
+          <i class="bi bi-chevron-down mobile-accordion-icon"></i>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-subnav-link">
+            <i class="bi bi-house-door-fill"></i> Home 1 &mdash; Traditional
+          </a>
+          <a href="home-2.html" class="mobile-subnav-link">
+            <i class="bi bi-fire"></i> Home 2 &mdash; Contemporary
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="mobile-nav-link active">
+        <span>About</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="services.html" class="mobile-nav-link">
+        <span>Services</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="menu.html" class="mobile-nav-link">
+        <span>Menu</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="party-orders.html" class="mobile-nav-link">
+        <span>Party Orders</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span>Contact</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="dashboard.html" class="mobile-nav-link">
+        <span>Dashboard</span> <i class="bi bi-chevron-right"></i>
+      </a>
+    </nav>
+
+    <!-- Mobile Drawer Footer: Exact Action Buttons as used in Web View + ORDER NOW CTA -->
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-icon-actions">
+        <!-- Theme Toggle -->
+        <button class="icon-btn theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <!-- RTL Toggle -->
+        <button class="icon-btn rtl-toggle-btn" title="Toggle RTL Layout" aria-label="Toggle RTL">
+          RTL
+        </button>
+
+        <!-- Cart Drawer Toggle -->
+        <button class="icon-btn cart-toggle-btn" title="View Cart" aria-label="View Cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge cart-count-badge">3</span>
+        </button>
+
+        <!-- Customer Login Link -->
+        <a href="login.html" class="icon-btn" title="Customer Login" aria-label="Customer Login">
+          <i class="bi bi-person"></i>
+        </a>
+      </div>
+
+      <!-- Order Now CTA -->
+      <a href="menu.html" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 12px 20px;">
+        <i class="bi bi-bag-check-fill" style="margin-right: 6px;"></i> ORDER NOW
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =====================================================================
+         SECTION 1 — ABOUT HERO (Rule 14)
+         ===================================================================== -->
+    <section class="page-hero">
+      <img src="assets/images/chef-dum.jpg" alt="Authentic biryani preparation photography" class="page-hero-bg">
+      <div class="container page-hero-content">
+        <span class="eyebrow" style="color: var(--saffron);">Our Heritage & Passion</span>
+        <h1>OUR STORY IS COOKED INTO EVERY LAYER.</h1>
+        <p>
+          At Biryani House & Takeaway, cooking biryani is not merely a recipe — it is a time-honored discipline of balance, patient heat, and deep respect for spice origins.
+        </p>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 2 — OUR STORY (Rule 14: Authentic Storytelling)
+         ===================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="grid-2" style="align-items: center;">
+          <div>
+            <span class="eyebrow">The Heart of Hospitality</span>
+            <h2 class="section-title">TRADITIONAL DUM AT HEART.</h2>
+            <p class="section-subtitle" style="margin-bottom: 20px;">
+              Founded with the simple ambition to celebrate the depth and honesty of traditional Hyderabadi and South Indian dum cooking.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+              Our story revolves around the communal spirit of the Indian dining table: friends, families and colleagues gathered around an aromatic degh, steam wafting upward as the dough seal is broken with a silver spoon.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
+              Authentic kitchen recipes, family-inspired spice blends, and welcoming hospitality tailored for everyday takeaway and festive family celebrations.
+            </p>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+              <a href="menu.html" class="btn btn-primary">Taste Our Tradition</a>
+              <a href="contact.html" class="btn btn-outline">Visit Our Restaurant</a>
+            </div>
+          </div>
+
+          <div class="story-media-wrapper">
+            <img src="assets/images/15.jpg" alt="Biryani House Restaurant Interior Atmosphere" class="story-media-img" loading="lazy">
+            <div class="story-media-overlay"></div>
+            <div class="story-floating-badge">
+              <div class="badge-icon"><i class="bi bi-award-fill"></i></div>
+              <div class="badge-text">
+                <strong>12+ Years of Culinary Heritage</strong>
+                <span>Authentic Nizami Dum Cooking & Warm Hospitality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 3 — OUR COOKING PHILOSOPHY (6 Royal Pillars of Dum Craftsmanship)
+         ===================================================================== -->
+    <section class="section-philosophy" id="cooking-philosophy">
+      <div class="philosophy-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="section-header center philosophy-header">
+          <div class="philosophy-royal-pill">
+            <span class="pill-sparkle">✦</span>
+            <span>SACRED CULINARY CODE • SIX PILLARS</span>
+            <span class="pill-sparkle">✦</span>
+          </div>
+          <h2 class="section-title philosophy-title">OUR COOKING PHILOSOPHY</h2>
+          <p class="section-subtitle philosophy-subtitle">
+            Six uncompromised standards guiding our master ustads from morning prep to final tableside serving.
+          </p>
+        </div>
+
+        <!-- 6 Heritage Pillars Matrix (Completely Not a Generic Card Template) -->
+        <div class="philosophy-matrix">
+          
+          <!-- Pillar 1 -->
+          <div class="philosophy-pillar" data-pillar="1">
+            <span class="pillar-watermark" aria-hidden="true">01</span>
+            <div class="pillar-seal">
+              <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <div class="pillar-body">
+              <span class="pillar-tag">Pillar I • Provenance</span>
+              <h3 class="pillar-title">Fresh Ingredients</h3>
+              <p class="pillar-desc">
+                Strict farm-to-kitchen sourcing of tender meats, farm eggs, crisp seasonal vegetables, and pure golden desi ghee. Zero frozen substitutes.
+              </p>
+              <div class="pillar-guarantee">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Farm-to-Kitchen Traceability</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="philosophy-pillar" data-pillar="2">
+            <span class="pillar-watermark" aria-hidden="true">02</span>
+            <div class="pillar-seal">
+              <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <div class="pillar-body">
+              <span class="pillar-tag">Pillar II • Alchemy</span>
+              <h3 class="pillar-title">Carefully Selected Spices</h3>
+              <p class="pillar-desc">
+                Directly sourced whole cardamom, cinnamon quills, mace flowers, cloves, and pure Kashmiri saffron hand-crushed in-house at room temperature.
+              </p>
+              <div class="pillar-guarantee">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Cold In-House Stone Crushing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="philosophy-pillar" data-pillar="3">
+            <span class="pillar-watermark" aria-hidden="true">03</span>
+            <div class="pillar-seal">
+              <i class="bi bi-gem"></i>
+            </div>
+            <div class="pillar-body">
+              <span class="pillar-tag">Pillar III • Selection</span>
+              <h3 class="pillar-title">Quality Aged Rice</h3>
+              <p class="pillar-desc">
+                Two-year matured extra-long grain basmati cooked to precise 70% tenderness before layering to absorb deep meat broths and saffron steam.
+              </p>
+              <div class="pillar-guarantee">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>24-Month Grain Maturation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="philosophy-pillar" data-pillar="4">
+            <span class="pillar-watermark" aria-hidden="true">04</span>
+            <div class="pillar-seal">
+              <i class="bi bi-fire"></i>
+            </div>
+            <div class="pillar-body">
+              <span class="pillar-tag">Pillar IV • Purdah Heat</span>
+              <h3 class="pillar-title">Traditional Dum Method</h3>
+              <p class="pillar-desc">
+                Heavy copper handis sealed with kneaded wheat dough, trapping the volatile aromatics and infusing moisture over slow charcoal heat.
+              </p>
+              <div class="pillar-guarantee">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Zero Steam Pressure Loss</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 5 -->
+          <div class="philosophy-pillar" data-pillar="5">
+            <span class="pillar-watermark" aria-hidden="true">05</span>
+            <div class="pillar-seal">
+              <i class="bi bi-sliders2-vertical"></i>
+            </div>
+            <div class="pillar-body">
+              <span class="pillar-tag">Pillar V • Discipline</span>
+              <h3 class="pillar-title">Consistent Preparation</h3>
+              <p class="pillar-desc">
+                Standardized slow-cook timings and precise spice-ratio balances ensuring the exact same exquisite royal taste every single visit.
+              </p>
+              <div class="pillar-guarantee">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>100% Recipe Consistency</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pillar 6 -->
+          <div class="philosophy-pillar" data-pillar="6">
+            <span class="pillar-watermark" aria-hidden="true">06</span>
+            <div class="pillar-seal">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <div class="pillar-body">
+              <span class="pillar-tag">Pillar VI • Integrity</span>
+              <h3 class="pillar-title">Fresh Serving Guarantee</h3>
+              <p class="pillar-desc">
+                Every handi is broken fresh upon order, ensuring hot fragrant rice and succulent meats never sit reheated or microwave-treated.
+              </p>
+              <div class="pillar-guarantee">
+                <i class="bi bi-check-circle-fill"></i>
+                <span>Broken Fresh Upon Order</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Masterclass Commitment Banner below the 6 pillars -->
+        <div class="philosophy-commitment-bar">
+          <div class="commitment-left">
+            <i class="bi bi-award-fill"></i>
+            <div>
+              <strong>The Royal Seal of Purity</strong>
+              <span>Our kitchens follow 400-year-old Nizami Dum standards with strictly natural spices and unadulterated ghee.</span>
+            </div>
+          </div>
+          <a href="menu.html" class="btn btn-primary btn-sm commitment-btn">
+            <span>Explore The Royal Menu</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 4 — OUR KITCHEN (Animated Artisan Kitchen Showcase)
+         ===================================================================== -->
+    <section class="section section-kitchen-showcase" id="artisan-kitchen">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow"><i class="bi bi-fire" style="color: var(--saffron);"></i> Behind the Scenes</span>
+          <h2 class="section-title">THE ARTISAN KITCHEN</h2>
+          <p class="section-subtitle">
+            Witness the discipline of master ustads, charcoal stations and slow simmering pots in our state-of-the-art kitchen.
+          </p>
+        </div>
+
+        <div class="artisan-kitchen-grid">
+          
+          <!-- Kitchen Card 1 -->
+          <article class="artisan-card">
+            <div class="artisan-card-media">
+              <img src="assets/images/chef-dum.jpg" alt="Chef sealing biryani handi with wheat dough" loading="lazy">
+              <div class="artisan-media-overlay"></div>
+              
+              <!-- Floating Live Badge -->
+              <span class="artisan-badge">
+                <i class="bi bi-shield-lock-fill"></i> Stage 01 • Purdah Seal
+              </span>
+
+              <!-- Rising Steam Animation on Sealing Handi -->
+              <div class="kitchen-steam-fx" aria-hidden="true">
+                <span class="kitchen-plume k-plume-1"></span>
+                <span class="kitchen-plume k-plume-2"></span>
+              </div>
+
+              <!-- Shimmer Sheen Beam on Hover -->
+              <div class="artisan-shimmer"></div>
+            </div>
+
+            <div class="artisan-card-body">
+              <div>
+                <div class="artisan-meta">
+                  <span class="artisan-step-num">01</span>
+                  <span class="artisan-technique">Purdah Technique</span>
+                </div>
+                <h3 class="artisan-title">Handcrafted Dum Sealing</h3>
+                <p class="artisan-desc">
+                  Traditional wheat dough perimeter pressed tightly to create pressure-cook physics inside heavy copper handis without mechanical pressure.
+                </p>
+              </div>
+              <div class="artisan-footer">
+                <span class="artisan-tag"><i class="bi bi-check2-circle"></i> 100% Hermetic Seal</span>
+                <span class="artisan-explore-hint">Explore <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kitchen Card 2 -->
+          <article class="artisan-card">
+            <div class="artisan-card-media">
+              <img src="assets/images/10.jpg" alt="Tandoor clay oven roasted meats and fragrant banquet" loading="lazy">
+              <div class="artisan-media-overlay"></div>
+              
+              <!-- Floating Live Badge -->
+              <span class="artisan-badge fire-badge">
+                <i class="bi bi-fire"></i> Live Embers • 450°C
+              </span>
+
+              <!-- Warm Ember Glow Animation -->
+              <div class="kitchen-ember-glow" aria-hidden="true"></div>
+
+              <!-- Shimmer Sheen Beam on Hover -->
+              <div class="artisan-shimmer"></div>
+            </div>
+
+            <div class="artisan-card-body">
+              <div>
+                <div class="artisan-meta">
+                  <span class="artisan-step-num">02</span>
+                  <span class="artisan-technique">Smoky Charcoal Flame</span>
+                </div>
+                <h3 class="artisan-title">Clay Tandoor Roasting</h3>
+                <p class="artisan-desc">
+                  Fiery natural charcoal heat infusing smoky charred tenderness into succulent chicken tikkas, roasted spices, and crispy royal butter naans.
+                </p>
+              </div>
+              <div class="artisan-footer">
+                <span class="artisan-tag"><i class="bi bi-check2-circle"></i> Clay Oven Radiance</span>
+                <span class="artisan-explore-hint">Explore <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Kitchen Card 3 -->
+          <article class="artisan-card">
+            <div class="artisan-card-media">
+              <img src="assets/images/1.jpg" alt="Freshly opened steaming handi biryani" loading="lazy">
+              <div class="artisan-media-overlay"></div>
+              
+              <!-- Floating Live Badge -->
+              <span class="artisan-badge aroma-badge">
+                <i class="bi bi-stars"></i> Saffron Burst
+              </span>
+
+              <!-- Dynamic Rising Steam Plumes -->
+              <div class="kitchen-steam-fx" aria-hidden="true">
+                <span class="kitchen-plume k-plume-1"></span>
+                <span class="kitchen-plume k-plume-2"></span>
+                <span class="kitchen-plume k-plume-3"></span>
+              </div>
+
+              <!-- Shimmer Sheen Beam on Hover -->
+              <div class="artisan-shimmer"></div>
+            </div>
+
+            <div class="artisan-card-body">
+              <div>
+                <div class="artisan-meta">
+                  <span class="artisan-step-num">03</span>
+                  <span class="artisan-technique">The Grand Unveiling</span>
+                </div>
+                <h3 class="artisan-title">The Steam Opening</h3>
+                <p class="artisan-desc">
+                  When the baked dough seal cracks open tableside, an irresistible bouquet of aged basmati, pure ghee, and Kashmiri saffron blooms across the room.
+                </p>
+              </div>
+              <div class="artisan-footer">
+                <span class="artisan-tag"><i class="bi bi-check2-circle"></i> Broken Fresh Upon Order</span>
+                <span class="artisan-explore-hint">Explore <i class="bi bi-arrow-right"></i></span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5 — FAMILY AND PARTY ORDERS (Rule 14)
+         ===================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="party-banner-grid">
+          <div class="party-banner-media">
+            <img src="assets/images/7.jpg" alt="Family gathering enjoying biryani feast" loading="lazy">
+          </div>
+          <div class="party-banner-content">
+            <span class="eyebrow">Celebrations & Bulk Orders</span>
+            <h2 class="section-title">BRING THE FEAST TO YOUR CELEBRATION.</h2>
+            <p class="section-subtitle" style="margin-bottom: 24px;">
+              From family gatherings to special celebrations, let us make your occasions more memorable with freshly prepared biryani.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; font-size: 0.95rem; color: var(--text-secondary);">
+              <li><i class="bi bi-check2-circle" style="color: var(--saffron); margin-inline-end: 8px;"></i> Large handi party packs serving 10 to 500+ guests</li>
+              <li><i class="bi bi-check2-circle" style="color: var(--saffron); margin-inline-end: 8px;"></i> Complimentary starters, salan, raita & dessert pairings</li>
+              <li><i class="bi bi-check2-circle" style="color: var(--saffron); margin-inline-end: 8px;"></i> Punctual doorstep delivery & setup assistance</li>
+            </ul>
+            <a href="party-orders.html" class="btn btn-primary">
+              <i class="bi bi-calendar-event"></i> PLAN YOUR PARTY ORDER
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 6 — FINAL CTA (Rule 14)
+         ===================================================================== -->
+    <section class="final-cta-section">
+      <img src="assets/images/9.jpg" alt="Appetizing biryani background" class="final-cta-bg">
+      <div class="container final-cta-inner">
+        <span class="eyebrow" style="color: var(--saffron);">Ready for a Delicious Feast?</span>
+        <h2>YOUR NEXT BIRYANI CRAVING STARTS HERE.</h2>
+        <p>
+          Discover your favourite flavours and enjoy a delicious biryani experience slow-cooked with tradition and served with love.
+        </p>
+        <div class="cta-btn-row">
+          <a href="menu.html" class="btn btn-gold">
+            <i class="bi bi-bag-check"></i> ORDER NOW
+          </a>
+          <a href="contact.html" class="btn btn-outline-light">
+            <i class="bi bi-geo-alt"></i> CONTACT US
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Public Cart Drawer Component -->
+  <div class="mobile-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="publicCartDrawer" aria-label="Customer Cart">
+    <div class="cart-drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="bi bi-bag-heart-fill" style="color: var(--saffron); font-size: 1.25rem;"></i>
+        <h3 style="margin: 0;">Your Order Cart</h3>
+      </div>
+      <button class="icon-btn" id="cartDrawerClose" aria-label="Close cart" style="background: none; border-color: rgba(255,244,229,0.3); color: var(--cream);">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="cart-drawer-body">
+      <div id="cartEmptyState" style="text-align: center; padding-block: 60px 20px;">
+        <i class="bi bi-basket" style="font-size: 3rem; color: var(--saffron);"></i>
+        <h4 style="margin-block: 16px 6px;">Your cart is currently empty</h4>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">Add aromatic biryanis and succulent starters from our menu to get started.</p>
+        <a href="menu.html" class="btn btn-primary btn-sm" onclick="closeCartDrawer()">Browse Menu</a>
+      </div>
+      <div id="cartItemsList"></div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display: none;">
+      <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px;">
+        <span>Item Subtotal:</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
+        <span>Packaging & Delivery (Demo):</span>
+        <strong id="cartDeliveryFee">₹50</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 700; color: var(--text-heading); padding-top: 10px; border-top: 1px solid var(--border-strong); margin-bottom: 18px;">
+        <span>Grand Total:</span>
+        <strong id="cartGrandTotal" style="color: var(--maroon);">₹0</strong>
+      </div>
+      <a href="dashboard.html#cart" class="btn btn-primary" style="width: 100%;">
+        PROCEED TO ORDER <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo" style="margin-bottom: 16px;">
+          <div class="brand-logo-mark">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+              <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+              <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+              <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+            </svg>
+          </div>
+          <span class="brand-name" style="color: var(--cream);">BIRYANI HOUSE</span>
+        </div>
+        <p style="font-size: 0.88rem; color: rgba(255, 244, 229, 0.82); line-height: 1.7; margin-bottom: 18px;">
+          A Little Spice. A Lot Of Tradition.<br>
+          Authentic dum biryani and festive dining crafted with rich spices, sealed copper handis and heritage hospitality.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore Menu</h4>
+        <nav class="footer-links">
+          <a href="menu.html">Chicken Dum Biryani</a>
+          <a href="menu.html">Royal Mutton Biryani</a>
+          <a href="menu.html">Vegetable Handi Biryani</a>
+          <a href="menu.html">South Indian Starters</a>
+          <a href="menu.html">Fresh Tandoor Breads</a>
+          <a href="menu.html">Gulab Jamun &amp; Desserts</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hospitality</h4>
+        <nav class="footer-links">
+          <a href="about.html">Our Dum Story</a>
+          <a href="services.html">Dine-In &amp; Takeaway</a>
+          <a href="party-orders.html">Catering Enquiries</a>
+          <a href="dashboard.html">Customer Dashboard</a>
+          <a href="login.html">Demo Member Login</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Restaurant Location</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <span>104 Heritage Avenue, Food District, Hyderabad, Telangana 500033</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <span>Open Daily: 11:30 AM – 11:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 BIRYANI HOUSE. All rights reserved.</div>
+      <div>Crafted for Authentic Dining &amp; Takeaway Services.</div>
+    </div>
+  </footer>
+
+  <!-- Master JavaScript File (Rule 7) -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,746 @@
+/* ==========================================================================
+   BIRYANI HOUSE & TAKEAWAY — Customer Dashboard Stylesheet (dashboard.css)
+   Dedicated dashboard styling: Clean editorial layout, responsive sidebar,
+   collapsible off-canvas for mobile, interactive status tracking timeline,
+   responsive tables-to-cards, and full RTL & Dark Theme integration.
+   ========================================================================== */
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--bg-body);
+}
+
+/* ==========================================================================
+   1. DASHBOARD SIDEBAR (RULE 21 - STICKY, ZERO SCROLLBAR, COMFORTABLE FONT & SPACING)
+   ========================================================================== */
+.dash-sidebar {
+  width: 280px;
+  background-color: var(--maroon);
+  color: var(--cream);
+  border-inline-end: 2px solid var(--saffron);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox: completely hide scrollbar */
+  -ms-overflow-style: none; /* IE/Edge: completely hide scrollbar */
+  z-index: 900;
+  transition: transform var(--transition);
+  box-sizing: border-box;
+}
+
+.dash-sidebar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge: completely hide scrollbar */
+  width: 0;
+  height: 0;
+}
+
+.dash-sidebar-top-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
+  justify-content: flex-start;
+}
+
+.dash-sidebar-header {
+  padding: clamp(14px, 2vh, 20px) 20px clamp(10px, 1.5vh, 16px);
+  border-bottom: 1px solid rgba(255, 244, 229, 0.14);
+  flex-shrink: 0;
+}
+
+.dash-brand-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dash-brand-wrap .brand-logo-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #7e2436 0%, #4a131e 100%);
+  border: 1.5px solid var(--saffron);
+  box-shadow: 0 4px 14px rgba(101, 29, 43, 0.25);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dash-brand-wrap .brand-logo-mark svg {
+  width: 26px;
+  height: 26px;
+}
+
+.dash-brand-wrap .brand-name {
+  color: var(--cream);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+.dash-nav-menu {
+  padding: clamp(8px, 1.4vh, 14px) 14px;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3px, 0.55vh, 5px);
+  flex: 1 1 auto;
+  min-height: 0;
+  justify-content: flex-start;
+}
+
+.dash-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: clamp(7px, 1.05vh, 10px) 14px;
+  border-radius: var(--radius-sm);
+  font-size: clamp(0.88rem, 1.25vh, 0.94rem);
+  font-weight: 500;
+  line-height: 1.3;
+  color: rgba(255, 244, 229, 0.88);
+  transition: all var(--transition);
+  position: relative;
+  white-space: nowrap;
+}
+
+.dash-nav-item i {
+  font-size: clamp(1.05rem, 1.35vh, 1.18rem);
+  color: var(--saffron);
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.dash-nav-item:hover,
+.dash-nav-item.active {
+  background-color: rgba(217, 154, 50, 0.18);
+  color: #FFF4E5;
+  font-weight: 600;
+}
+
+.dash-nav-item.active::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 4px;
+  border-radius: 4px;
+  background-color: var(--saffron);
+}
+
+.dash-nav-divider {
+  border-top: 1px solid rgba(255, 244, 229, 0.14);
+  margin-block: clamp(5px, 0.8vh, 8px);
+  padding-top: clamp(5px, 0.8vh, 8px);
+}
+
+.dash-sidebar-footer {
+  padding: clamp(12px, 1.8vh, 16px) 20px;
+  border-top: 1px solid rgba(255, 244, 229, 0.14);
+  background-color: rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.member-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.member-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1.5px solid var(--saffron);
+  background-color: var(--saffron-soft);
+  color: var(--saffron);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.92rem;
+  flex-shrink: 0;
+}
+
+.member-info h5 {
+  color: var(--cream);
+  font-size: 0.9rem;
+  line-height: 1.25;
+  margin: 0;
+}
+
+.member-info span {
+  font-size: 0.72rem;
+  color: var(--saffron);
+  font-weight: 500;
+}
+
+.signout-btn {
+  margin-top: clamp(8px, 1.1vh, 12px);
+  width: 100%;
+  padding: clamp(7px, 1vh, 9px) 12px;
+  background-color: rgba(255, 244, 229, 0.08);
+  border: 1px solid rgba(255, 244, 229, 0.18);
+  color: var(--cream);
+  border-radius: var(--radius-sm);
+  font-size: clamp(0.78rem, 1.1vh, 0.84rem);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all var(--transition);
+}
+
+.signout-btn:hover {
+  background-color: #8C1C29;
+  border-color: var(--saffron);
+}
+
+/* ==========================================================================
+   2. DASHBOARD MAIN CONTENT & TOPBAR (RULE 22)
+   ========================================================================== */
+.dash-main {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-topbar {
+  height: var(--header-height);
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  padding-inline: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.dash-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dash-menu-toggle {
+  display: none;
+}
+
+.dash-topbar-title {
+  font-size: 1.45rem;
+  color: var(--text-heading);
+  text-transform: capitalize;
+}
+
+.dash-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notif-dropdown-wrap {
+  position: relative;
+}
+
+.notif-badge-pill {
+  position: absolute;
+  top: -4px;
+  inset-inline-end: -4px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--saffron);
+  color: #160B0E;
+  font-size: 0.68rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notif-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  inset-inline-end: 0;
+  width: 330px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 16px;
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1050;
+}
+
+.notif-dropdown-menu.active {
+  display: flex;
+}
+
+.notif-item {
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-body);
+  border: 1px solid var(--border-color);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.notif-item.read {
+  opacity: 0.6;
+}
+
+/* Dashboard View Wrapper */
+.dash-view-content {
+  padding: 36px;
+  flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .dash-topbar {
+    padding-inline: 24px;
+  }
+  .dash-view-content {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dash-topbar {
+    padding-inline: 16px;
+  }
+  .dash-view-content {
+    padding: 20px 16px;
+  }
+}
+
+/* ==========================================================================
+   3. MOBILE DASHBOARD SIDEBAR DRAWER (RULE 22 & 37)
+   ========================================================================== */
+.dash-sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(18, 6, 9, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 990;
+  display: none;
+}
+
+.dash-sidebar-overlay.active {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .dash-sidebar {
+    position: fixed;
+    top: 0;
+    inset-inline-start: 0;
+    transform: translateX(-105%);
+    z-index: 1000;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .dash-sidebar::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  [dir="rtl"] .dash-sidebar {
+    transform: translateX(105%);
+  }
+
+  .dash-sidebar.active {
+    transform: translateX(0);
+  }
+
+  .dash-menu-toggle {
+    display: inline-flex;
+  }
+}
+
+/* ==========================================================================
+   4. DASHBOARD OVERVIEW & KPI CARDS (RULE 23)
+   ========================================================================== */
+.dash-greeting-banner {
+  padding: 28px 32px;
+  background: linear-gradient(135deg, var(--maroon) 0%, #44111B 100%);
+  color: var(--cream);
+  border-radius: var(--radius-md);
+  border-inline-start: 5px solid var(--saffron);
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.dash-greeting-banner h2 {
+  color: var(--cream);
+  font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+  margin-bottom: 6px;
+}
+
+.dash-greeting-banner p {
+  color: rgba(255, 244, 229, 0.85);
+  font-size: 0.96rem;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.kpi-card {
+  padding: 24px 20px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform var(--transition), border-color var(--transition);
+}
+
+.kpi-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--saffron);
+}
+
+.kpi-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background-color: var(--saffron-soft);
+  color: var(--maroon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+[data-theme="dark"] .kpi-icon {
+  color: var(--saffron);
+}
+
+.kpi-meta h3 {
+  font-size: 1.6rem;
+  line-height: 1.1;
+  color: var(--text-heading);
+}
+
+.kpi-meta span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 1024px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   5. DELIVERY TRACKING TIMELINE (RULE 27)
+   ========================================================================== */
+.tracking-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.tracking-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 32px;
+}
+
+.tracking-timeline {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  position: relative;
+  margin-block: 28px 20px;
+}
+
+.timeline-step {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-dot {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--bg-body);
+  border: 2px solid var(--border-strong);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 2;
+  transition: all var(--transition);
+}
+
+.timeline-step.completed .timeline-dot {
+  background-color: var(--saffron);
+  border-color: var(--saffron);
+  color: #1A0B0E;
+}
+
+.timeline-step.active .timeline-dot {
+  background-color: var(--maroon);
+  border-color: var(--saffron);
+  color: var(--saffron);
+  box-shadow: 0 0 0 4px var(--saffron-soft);
+}
+
+.timeline-step span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.timeline-step.completed span,
+.timeline-step.active span {
+  color: var(--text-heading);
+}
+
+@media (max-width: 767px) {
+  .tracking-timeline {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .timeline-step {
+    flex-direction: row;
+    gap: 16px;
+    text-align: start;
+  }
+  .timeline-dot {
+    margin-bottom: 0;
+  }
+}
+
+/* ==========================================================================
+   6. RESPONSIVE DASHBOARD TABLES & STACKED CARDS (RULE 29 & 37)
+   ========================================================================== */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-surface);
+}
+
+.dash-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: start;
+}
+
+.dash-table th {
+  padding: 16px 20px;
+  background-color: var(--bg-surface-alt);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-heading);
+  border-bottom: 1px solid var(--border-strong);
+}
+
+.dash-table td {
+  padding: 16px 20px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.dash-table tr:last-child td {
+  border-bottom: none;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-preparing {
+  background-color: rgba(217, 154, 50, 0.16);
+  color: #B57A16;
+  border: 1px solid var(--saffron);
+}
+
+.status-delivered {
+  background-color: rgba(30, 126, 52, 0.14);
+  color: var(--veg-green);
+  border: 1px solid var(--veg-green);
+}
+
+/* Mobile stacked order cards */
+@media (max-width: 767px) {
+  .dash-table,
+  .dash-table thead,
+  .dash-table tbody,
+  .dash-table th,
+  .dash-table td,
+  .dash-table tr {
+    display: block;
+  }
+
+  .dash-table thead {
+    display: none;
+  }
+
+  .dash-table tr {
+    margin-bottom: 16px;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    padding: 14px;
+    background-color: var(--bg-surface);
+  }
+
+  .dash-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border-color);
+  }
+
+  .dash-table td::before {
+    content: attr(data-label);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+  }
+}
+
+/* Saved Addresses & Settings Panels */
+.address-card {
+  padding: 24px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.address-card.default {
+  border-color: var(--saffron);
+  border-width: 2px;
+}
+
+.address-tag-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--maroon);
+}
+
+[data-theme="dark"] .address-tag-pill {
+  color: var(--saffron);
+}
+
+.dash-tab-section {
+  display: none;
+}
+
+.dash-tab-section.active {
+  display: block;
+}
+
+
+
+/* ==========================================================================
+   TABLET & 1024PX CENTERED LAST ODD CARD RULES (DASHBOARD MENU & FAVORITES)
+   ========================================================================== */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .dash-main .grid-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+  .dash-main .grid-3 > *:last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    width: calc(50% - 12px) !important;
+    max-width: calc(50% - 12px) !important;
+    justify-self: center !important;
+    margin-inline: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .dash-main .grid-3 {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  .dash-main .grid-3 > *:last-child:nth-child(odd) {
+    grid-column: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-inline: 0 !important;
+  }
+}

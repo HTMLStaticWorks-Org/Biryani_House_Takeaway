@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon (Brand Logo Mark) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <title>Restaurant Services | Biryani House & Takeaway</title>
+  <meta name="description" content="Explore dining experiences at Biryani House: Ambient Dine-In, Convenient Takeaway, Fast Delivery, Large Party Catering, and Corporate Group Orders.">
+  <meta property="og:title" content="Restaurant Services | Biryani House & Takeaway">
+  <meta property="og:description" content="Great biryani, served your way. Premium dine-in, takeaway, catering & corporate hospitality.">
+  <meta property="og:image" content="assets/images/15.jpg">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+        <header class="site-header" id="siteHeader">
+    <div class="container navbar-inner">
+      <!-- Left: Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Biryani House Home">
+        <div class="brand-logo-mark">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+            <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+            <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="brand-name">BIRYANI HOUSE</span>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <!-- Home Dropdown Menu -->
+        <div class="nav-dropdown">
+          <a href="index.html" class="nav-link nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down nav-dropdown-chevron"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html" class="nav-dropdown-item">
+              <div class="dropdown-item-badge"><i class="bi bi-house-door-fill"></i></div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Home 1 &mdash; Traditional</span>
+                <span class="dropdown-item-sub">Classic Handi &amp; Heritage Dum</span>
+              </div>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item">
+              <div class="dropdown-item-badge"><i class="bi bi-fire"></i></div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Home 2 &mdash; Contemporary</span>
+                <span class="dropdown-item-sub">Modern Charcoal &amp; Live Ordering</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="party-orders.html" class="nav-link">Party Orders</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <!-- Right: Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle (Desktop Only) -->
+        <button class="icon-btn theme-toggle-btn desktop-only-control" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <!-- RTL Toggle (Desktop Only) -->
+        <button class="icon-btn rtl-toggle-btn desktop-only-control" title="Toggle RTL Layout" aria-label="Toggle RTL">
+          RTL
+        </button>
+
+        <!-- Cart Drawer Toggle (Desktop Only) -->
+        <button class="icon-btn cart-toggle-btn desktop-only-control" title="View Cart" aria-label="View Cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge cart-count-badge">3</span>
+        </button>
+
+        <!-- Customer Login Link (Desktop Only) -->
+        <a href="login.html" class="icon-btn desktop-only-control" title="Customer Login" aria-label="Customer Login">
+          <i class="bi bi-person"></i>
+        </a>
+
+        <!-- Order Now CTA (Desktop Only) -->
+        <a href="menu.html" class="btn btn-primary nav-order-btn desktop-only-control">
+          <i class="bi bi-bag-check-fill" style="margin-right: 6px;"></i>ORDER NOW
+        </a>
+
+        <!-- Mobile Hamburger Toggle (Tablet & Mobile Header Only) -->
+        <button class="icon-btn mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <i class="bi bi-list" style="font-size: 1.4rem;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay (Rule 9) -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-logo-mark">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+            <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+            <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="brand-name">BIRYANI HOUSE</span>
+      </div>
+      <button class="icon-btn mobile-drawer-close" aria-label="Close Mobile Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation items (clean list, no extra row above Home) -->
+    <nav class="mobile-nav-list">
+      <!-- Mobile Home Accordion Submenu -->
+      <div class="mobile-nav-accordion">
+        <button class="mobile-nav-link mobile-accordion-trigger" aria-expanded="false">
+          <span>Home</span>
+          <i class="bi bi-chevron-down mobile-accordion-icon"></i>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-subnav-link">
+            <i class="bi bi-house-door-fill"></i> Home 1 &mdash; Traditional
+          </a>
+          <a href="home-2.html" class="mobile-subnav-link">
+            <i class="bi bi-fire"></i> Home 2 &mdash; Contemporary
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="mobile-nav-link">
+        <span>About</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="services.html" class="mobile-nav-link active">
+        <span>Services</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="menu.html" class="mobile-nav-link">
+        <span>Menu</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="party-orders.html" class="mobile-nav-link">
+        <span>Party Orders</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span>Contact</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="dashboard.html" class="mobile-nav-link">
+        <span>Dashboard</span> <i class="bi bi-chevron-right"></i>
+      </a>
+    </nav>
+
+    <!-- Mobile Drawer Footer: Exact Action Buttons as used in Web View + ORDER NOW CTA -->
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-icon-actions">
+        <!-- Theme Toggle -->
+        <button class="icon-btn theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <!-- RTL Toggle -->
+        <button class="icon-btn rtl-toggle-btn" title="Toggle RTL Layout" aria-label="Toggle RTL">
+          RTL
+        </button>
+
+        <!-- Cart Drawer Toggle -->
+        <button class="icon-btn cart-toggle-btn" title="View Cart" aria-label="View Cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge cart-count-badge">3</span>
+        </button>
+
+        <!-- Customer Login Link -->
+        <a href="login.html" class="icon-btn" title="Customer Login" aria-label="Customer Login">
+          <i class="bi bi-person"></i>
+        </a>
+      </div>
+
+      <!-- Order Now CTA -->
+      <a href="menu.html" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 12px 20px;">
+        <i class="bi bi-bag-check-fill" style="margin-right: 6px;"></i> ORDER NOW
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Page Hero (Rule 15) -->
+    <section class="page-hero">
+      <img src="assets/images/15.jpg" alt="Restaurant interior" class="page-hero-bg">
+      <div class="container page-hero-content">
+        <span class="eyebrow" style="color: var(--saffron);">Hospitality Offerings</span>
+        <h1>GREAT BIRYANI, SERVED YOUR WAY.</h1>
+        <p>
+          Whether dining under warm ambient chandeliers, collecting a freshly packed handi for home, or catering an extravagant wedding banquet.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5 Distinct Services (Rule 15) -->
+    <section class="section">
+      <div class="container">
+        
+        <!-- SERVICE 1 — DINE-IN -->
+        <article class="service-row">
+          <div class="service-media">
+            <span class="service-shimmer"></span>
+            <div class="service-floating-badge"><i class="bi bi-stars"></i> Royal Heritage Ambience</div>
+            <div class="kitchen-steam-fx" aria-hidden="true">
+              <span class="kitchen-plume k-plume-1"></span>
+              <span class="kitchen-plume k-plume-2"></span>
+              <span class="kitchen-plume k-plume-3"></span>
+            </div>
+            <img src="assets/images/15.jpg" alt="Comfortable dine-in restaurant experience" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-eyebrow-pill"><i class="bi bi-gem"></i> Service 01 • Royal Dine-In</span>
+            <h2 class="service-title">AUTHENTIC DINE-IN EXPERIENCE</h2>
+            <p class="section-subtitle" style="margin-bottom: 16px;">
+              Comfortable dining atmosphere adorned with warm heritage accents, traditional copper tableware and soothing aromatic hospitality.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 8px;">
+              Enjoy table service where biryanis arrive in smoking hot copper vessels, accompanied by our signature Mirchi Ka Salan and whipped curd raita. Perfect for family weekends, couple dinners and celebratory feasts.
+            </p>
+            <div class="service-chips">
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Copper Handi Service</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> AC Heritage Seating</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Live Table Hospitality</span>
+            </div>
+            <a href="contact.html" class="btn btn-primary service-btn">
+              <i class="bi bi-calendar2-check"></i> Reserve a Table <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- SERVICE 2 — TAKEAWAY -->
+        <article class="service-row reverse">
+          <div class="service-media">
+            <span class="service-shimmer"></span>
+            <div class="service-floating-badge"><i class="bi bi-lightning-charge-fill"></i> 10-Min Fast Counter</div>
+            <div class="kitchen-steam-fx" aria-hidden="true">
+              <span class="kitchen-plume k-plume-1"></span>
+              <span class="kitchen-plume k-plume-2"></span>
+              <span class="kitchen-plume k-plume-3"></span>
+            </div>
+            <img src="assets/images/takeaway-pack.jpg" alt="Hot takeaway food packaging" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-eyebrow-pill"><i class="bi bi-bag-check-fill"></i> Service 02 • Express Takeaway</span>
+            <h2 class="service-title">CONVENIENT TAKEAWAY</h2>
+            <p class="section-subtitle" style="margin-bottom: 16px;">
+              Freshly prepared handis packed for speedy, contactless counter collection without losing steam or aroma.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 8px;">
+              Place your order ahead online or at our counter. Each takeaway pack includes sealed containers of aromatic biryani, individual gravies, raita, cutlery and refreshing mouth fresheners.
+            </p>
+            <div class="service-chips">
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> 10-Min Express Pickup</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Aroma-Lock Packaging</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Complete Salan & Cutlery</span>
+            </div>
+            <a href="menu.html" class="btn btn-primary service-btn">
+              <i class="bi bi-bag-check"></i> Order Takeaway <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- SERVICE 3 — FOOD DELIVERY -->
+        <article class="service-row">
+          <div class="service-media">
+            <span class="service-shimmer"></span>
+            <div class="service-floating-badge"><i class="bi bi-shield-check"></i> Insulated Hot Pack</div>
+            <img src="assets/images/takeaway-pack.jpg" alt="Doorstep food delivery packaging" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-eyebrow-pill"><i class="bi bi-bicycle"></i> Service 03 • Fast Delivery</span>
+            <h2 class="service-title">DOORSTEP FOOD DELIVERY</h2>
+            <p class="section-subtitle" style="margin-bottom: 16px;">
+              Enjoy your favourite restaurant delicacies delivered straight to your home or workspace.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 8px;">
+              Every parcel is sealed with spill-proof safety seals and insulated thermal packaging to keep the rice fluffy and the meats tender upon arrival.
+            </p>
+            <div class="service-chips">
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> 30-45 Min Dispatch</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Triple-Insulated Hot Bags</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Live Order Tracking</span>
+            </div>
+            <a href="menu.html" class="btn btn-primary service-btn">
+              <i class="bi bi-bicycle"></i> Order for Delivery <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- SERVICE 4 — PARTY CATERING -->
+        <article class="service-row reverse">
+          <div class="service-media">
+            <span class="service-shimmer"></span>
+            <div class="service-floating-badge"><i class="bi bi-trophy-fill"></i> 10 to 500+ Guests</div>
+            <img src="assets/images/7.jpg" alt="Party and wedding catering setup" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-eyebrow-pill"><i class="bi bi-people-fill"></i> Service 04 • Grand Catering</span>
+            <h2 class="service-title">PARTY & EVENT CATERING</h2>
+            <p class="section-subtitle" style="margin-bottom: 16px;">
+              Generous food orders for family get-togethers, birthdays, housewarmings and festive celebrations.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 8px;">
+              We provide traditional 10kg, 20kg and custom handi deghs cooked on-site or dispatched warm, complete with chaffing dish warmers, serving cutlery and accompaniments.
+            </p>
+            <div class="service-chips">
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Authentic Dum Degh Pots</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Chafing Dish Warmers</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Catering Captain Support</span>
+            </div>
+            <a href="party-orders.html" class="btn btn-primary service-btn">
+              <i class="bi bi-people-fill"></i> Plan Party Order <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- SERVICE 5 — CORPORATE & BULK ORDERS -->
+        <article class="service-row">
+          <div class="service-media">
+            <span class="service-shimmer"></span>
+            <div class="service-floating-badge"><i class="bi bi-building"></i> Corporate Invoicing</div>
+            <img src="assets/images/8.jpg" alt="Corporate meeting and event dining" loading="lazy">
+          </div>
+          <div class="service-content">
+            <span class="service-eyebrow-pill"><i class="bi bi-briefcase-fill"></i> Service 05 • Bulk & B2B</span>
+            <h2 class="service-title">CORPORATE & BULK ORDERS</h2>
+            <p class="section-subtitle" style="margin-bottom: 16px;">
+              Office lunches, team appreciation parties, client meetings and large institutional group orders.
+            </p>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.75; margin-bottom: 8px;">
+              Customized single-serve meal boxes or buffet arrangements delivered with accurate invoicing and dedicated customer assistance.
+            </p>
+            <div class="service-chips">
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Individual Meal Bento Boxes</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> GST Compliant Invoicing</span>
+              <span class="service-chip"><i class="bi bi-check-circle-fill"></i> Scheduled Recurring Feasts</span>
+            </div>
+            <a href="party-orders.html" class="btn btn-primary service-btn">
+              <i class="bi bi-briefcase-fill"></i> Corporate Enquiry <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Final Enquiry CTA -->
+    <section class="final-cta-section">
+      <img src="assets/images/12.jpg" alt="Biryani feast background" class="final-cta-bg">
+      <div class="container final-cta-inner">
+        <span class="eyebrow" style="color: var(--saffron);">Need Custom Assistance?</span>
+        <h2>CUSTOMIZE YOUR DINING OR CATERING FEAST.</h2>
+        <p>Our hospitality managers are available to assist with portion estimations, menu curation and scheduling.</p>
+        <div class="cta-btn-row">
+          <a href="party-orders.html" class="btn btn-gold"><i class="bi bi-chat-heart"></i> ENQUIRE NOW</a>
+          <a href="contact.html" class="btn btn-outline-light"><i class="bi bi-telephone"></i> CONTACT US</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer Component -->
+  <div class="mobile-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="publicCartDrawer" aria-label="Customer Cart">
+    <div class="cart-drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="bi bi-bag-heart-fill" style="color: var(--saffron); font-size: 1.25rem;"></i>
+        <h3 style="margin: 0;">Your Order Cart</h3>
+      </div>
+      <button class="icon-btn" id="cartDrawerClose" aria-label="Close cart" style="background: none; border-color: rgba(255,244,229,0.3); color: var(--cream);"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="cart-drawer-body">
+      <div id="cartEmptyState" style="text-align: center; padding-block: 60px 20px;">
+        <i class="bi bi-basket" style="font-size: 3rem; color: var(--saffron);"></i>
+        <h4 style="margin-block: 16px 6px;">Your cart is currently empty</h4>
+        <a href="menu.html" class="btn btn-primary btn-sm" onclick="closeCartDrawer()">Browse Menu</a>
+      </div>
+      <div id="cartItemsList"></div>
+    </div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display: none;">
+      <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px;"><span>Item Subtotal:</span><strong id="cartSubtotal">₹0</strong></div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;"><span>Packaging & Delivery (Demo):</span><strong id="cartDeliveryFee">₹50</strong></div>
+      <div style="display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 700; color: var(--text-heading); padding-top: 10px; border-top: 1px solid var(--border-strong); margin-bottom: 18px;"><span>Grand Total:</span><strong id="cartGrandTotal" style="color: var(--maroon);">₹0</strong></div>
+      <a href="dashboard.html#cart" class="btn btn-primary" style="width: 100%;">PROCEED TO ORDER <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo" style="margin-bottom: 16px;">
+          <div class="brand-logo-mark">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+              <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+              <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+              <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+            </svg>
+          </div>
+          <span class="brand-name" style="color: var(--cream);">BIRYANI HOUSE</span>
+        </div>
+        <p style="font-size: 0.88rem; color: rgba(255, 244, 229, 0.82); line-height: 1.7; margin-bottom: 18px;">
+          A Little Spice. A Lot Of Tradition.<br>
+          Authentic dum biryani and festive dining crafted with rich spices, sealed copper handis and heritage hospitality.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore Menu</h4>
+        <nav class="footer-links">
+          <a href="menu.html">Chicken Dum Biryani</a>
+          <a href="menu.html">Royal Mutton Biryani</a>
+          <a href="menu.html">Vegetable Handi Biryani</a>
+          <a href="menu.html">South Indian Starters</a>
+          <a href="menu.html">Fresh Tandoor Breads</a>
+          <a href="menu.html">Gulab Jamun &amp; Desserts</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hospitality</h4>
+        <nav class="footer-links">
+          <a href="about.html">Our Dum Story</a>
+          <a href="services.html">Dine-In &amp; Takeaway</a>
+          <a href="party-orders.html">Catering Enquiries</a>
+          <a href="dashboard.html">Customer Dashboard</a>
+          <a href="login.html">Demo Member Login</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Restaurant Location</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <span>104 Heritage Avenue, Food District, Hyderabad, Telangana 500033</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <span>Open Daily: 11:30 AM – 11:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 BIRYANI HOUSE. All rights reserved.</div>
+      <div>Crafted for Authentic Dining &amp; Takeaway Services.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+

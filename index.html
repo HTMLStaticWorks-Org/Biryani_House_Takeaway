@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon (Brand Logo Mark) -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="alternate icon" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <title>Biryani House | Authentic Dum Biryani & Takeaway</title>
+  <meta name="description" content="Experience authentic Indian dum biryani slow-cooked with fragrant spices, tender marinated meats and aged basmati rice. Premium dining & convenient takeaway.">
+  <meta property="og:title" content="Biryani House | Authentic Dum Biryani & Takeaway">
+  <meta property="og:description" content="A little spice. A lot of tradition. Slow-cooked with tradition, served with love.">
+  <meta property="og:image" content="assets/images/1.jpg">
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Premium Navbar (Rule 8 & 9) -->
+        <header class="site-header" id="siteHeader">
+    <div class="container navbar-inner">
+      <!-- Left: Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Biryani House Home">
+        <div class="brand-logo-mark">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+            <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+            <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="brand-name">BIRYANI HOUSE</span>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <!-- Home Dropdown Menu -->
+        <div class="nav-dropdown">
+          <a href="index.html" class="nav-link nav-dropdown-trigger active" aria-haspopup="true" aria-expanded="false">
+            <span>Home</span>
+            <i class="bi bi-chevron-down nav-dropdown-chevron"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="index.html" class="nav-dropdown-item active">
+              <div class="dropdown-item-badge"><i class="bi bi-house-door-fill"></i></div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Home 1 &mdash; Traditional</span>
+                <span class="dropdown-item-sub">Classic Handi &amp; Heritage Dum</span>
+              </div>
+            </a>
+            <a href="home-2.html" class="nav-dropdown-item">
+              <div class="dropdown-item-badge"><i class="bi bi-fire"></i></div>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Home 2 &mdash; Contemporary</span>
+                <span class="dropdown-item-sub">Modern Charcoal &amp; Live Ordering</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="party-orders.html" class="nav-link">Party Orders</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+      </nav>
+
+      <!-- Right: Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle (Desktop Only) -->
+        <button class="icon-btn theme-toggle-btn desktop-only-control" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <!-- RTL Toggle (Desktop Only) -->
+        <button class="icon-btn rtl-toggle-btn desktop-only-control" title="Toggle RTL Layout" aria-label="Toggle RTL">
+          RTL
+        </button>
+
+        <!-- Cart Drawer Toggle (Desktop Only) -->
+        <button class="icon-btn cart-toggle-btn desktop-only-control" title="View Cart" aria-label="View Cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge cart-count-badge">3</span>
+        </button>
+
+        <!-- Customer Login Link (Desktop Only) -->
+        <a href="login.html" class="icon-btn desktop-only-control" title="Customer Login" aria-label="Customer Login">
+          <i class="bi bi-person"></i>
+        </a>
+
+        <!-- Order Now CTA (Desktop Only) -->
+        <a href="menu.html" class="btn btn-primary nav-order-btn desktop-only-control">
+          <i class="bi bi-bag-check-fill" style="margin-right: 6px;"></i>ORDER NOW
+        </a>
+
+        <!-- Mobile Hamburger Toggle (Tablet & Mobile Header Only) -->
+        <button class="icon-btn mobile-menu-toggle" aria-label="Open Mobile Menu">
+          <i class="bi bi-list" style="font-size: 1.4rem;"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer Overlay (Rule 9) -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-logo-mark">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+            <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+            <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+            <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+        </div>
+        <span class="brand-name">BIRYANI HOUSE</span>
+      </div>
+      <button class="icon-btn mobile-drawer-close" aria-label="Close Mobile Menu">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation items (clean list, no extra row above Home) -->
+    <nav class="mobile-nav-list">
+      <!-- Mobile Home Accordion Submenu -->
+      <div class="mobile-nav-accordion open">
+        <button class="mobile-nav-link mobile-accordion-trigger active" aria-expanded="true">
+          <span>Home</span>
+          <i class="bi bi-chevron-down mobile-accordion-icon"></i>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="index.html" class="mobile-subnav-link active">
+            <i class="bi bi-house-door-fill"></i> Home 1 &mdash; Traditional
+          </a>
+          <a href="home-2.html" class="mobile-subnav-link">
+            <i class="bi bi-fire"></i> Home 2 &mdash; Contemporary
+          </a>
+        </div>
+      </div>
+
+      <a href="about.html" class="mobile-nav-link">
+        <span>About</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="services.html" class="mobile-nav-link">
+        <span>Services</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="menu.html" class="mobile-nav-link">
+        <span>Menu</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="party-orders.html" class="mobile-nav-link">
+        <span>Party Orders</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="contact.html" class="mobile-nav-link">
+        <span>Contact</span> <i class="bi bi-chevron-right"></i>
+      </a>
+      <a href="dashboard.html" class="mobile-nav-link">
+        <span>Dashboard</span> <i class="bi bi-chevron-right"></i>
+      </a>
+    </nav>
+
+    <!-- Mobile Drawer Footer: Exact Action Buttons as used in Web View + ORDER NOW CTA -->
+    <div class="mobile-drawer-footer">
+      <div class="mobile-drawer-icon-actions">
+        <!-- Theme Toggle -->
+        <button class="icon-btn theme-toggle-btn" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+
+        <!-- RTL Toggle -->
+        <button class="icon-btn rtl-toggle-btn" title="Toggle RTL Layout" aria-label="Toggle RTL">
+          RTL
+        </button>
+
+        <!-- Cart Drawer Toggle -->
+        <button class="icon-btn cart-toggle-btn" title="View Cart" aria-label="View Cart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge cart-count-badge">3</span>
+        </button>
+
+        <!-- Customer Login Link -->
+        <a href="login.html" class="icon-btn" title="Customer Login" aria-label="Customer Login">
+          <i class="bi bi-person"></i>
+        </a>
+      </div>
+
+      <!-- Order Now CTA -->
+      <a href="menu.html" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 12px 20px;">
+        <i class="bi bi-bag-check-fill" style="margin-right: 6px;"></i> ORDER NOW
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- =====================================================================
+         SECTION 1 — HERO (Rule 12)
+         ===================================================================== -->
+            <!-- =====================================================================
+         SECTION 1 — HERO (Exact Match to Reference Screenshot)
+         ===================================================================== -->
+    <section class="hero-home exact-hero-section">
+      <!-- Decorative Indian Rangoli / Mandala Corner Accents -->
+      <div class="hero-corner-decor corner-top-left" aria-hidden="true">
+<svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="0" cy="0" r="45" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<circle cx="0" cy="0" r="80" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22" stroke-dasharray="3,4"/>
+<circle cx="0" cy="0" r="120" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<circle cx="0" cy="0" r="160" stroke="#C88E28" stroke-width="1.2" fill="none" opacity="0.22"/>
+<circle cx="0" cy="0" r="205" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22" stroke-dasharray="3,4"/>
+<circle cx="0" cy="0" r="250" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<circle cx="0" cy="0" r="295" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<path d="M80.0,0.0 Q119.9,5.9 79.6,7.8" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M120.0,0.0 C135.0,0.0 159.8,7.9 159.8,7.9 C159.8,7.9 134.3,13.2 119.4,11.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="179.8" cy="8.8" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M205.0,0.0 Q249.7,12.3 204.0,20.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M79.6,7.8 Q118.7,17.6 78.5,15.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M119.4,11.8 C134.3,13.2 158.3,23.5 158.3,23.5 C158.3,23.5 132.4,26.3 117.7,23.4" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="178.1" cy="26.4" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M204.0,20.1 Q247.3,36.7 201.1,40.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M78.5,15.6 Q116.4,29.2 76.6,23.2" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M117.7,23.4 C132.4,26.3 155.2,38.9 155.2,38.9 C155.2,38.9 129.2,39.2 114.8,34.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="174.6" cy="43.7" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M201.1,40.0 Q242.5,60.7 196.2,59.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M76.6,23.2 Q113.0,40.4 73.9,30.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M114.8,34.8 C129.2,39.2 150.6,53.9 150.6,53.9 C150.6,53.9 124.7,51.7 110.9,45.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="169.5" cy="60.6" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M196.2,59.5 Q235.4,84.2 189.4,78.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M73.9,30.6 Q108.5,51.3 70.6,37.7" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M110.9,45.9 C124.7,51.7 144.6,68.4 144.6,68.4 C144.6,68.4 119.1,63.6 105.8,56.6" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="162.7" cy="77.0" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M189.4,78.5 Q226.0,106.9 180.8,96.6" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M70.6,37.7 Q102.9,61.7 66.5,44.4" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M105.8,56.6 C119.1,63.6 137.2,82.3 137.2,82.3 C137.2,82.3 112.2,75.0 99.8,66.7" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="154.4" cy="92.5" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M180.8,96.6 Q214.4,128.5 170.5,113.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M66.5,44.4 Q96.4,71.5 61.8,50.8" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M99.8,66.7 C112.2,75.0 128.5,95.3 128.5,95.3 C128.5,95.3 104.4,85.6 92.8,76.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="144.6" cy="107.2" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M170.5,113.9 Q200.8,148.9 158.5,130.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M61.8,50.8 Q88.9,80.6 56.6,56.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M92.8,76.1 C104.4,85.6 118.6,107.4 118.6,107.4 C118.6,107.4 95.5,95.5 84.9,84.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="133.4" cy="120.9" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M158.5,130.1 Q185.2,167.9 145.0,145.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M56.6,56.6 Q80.6,88.9 50.8,61.8" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M84.9,84.9 C95.5,95.5 107.4,118.6 107.4,118.6 C107.4,118.6 85.6,104.4 76.1,92.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="120.9" cy="133.4" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M145.0,145.0 Q167.9,185.2 130.1,158.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M50.8,61.8 Q71.5,96.4 44.4,66.5" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M76.1,92.8 C85.6,104.4 95.3,128.5 95.3,128.5 C95.3,128.5 75.0,112.2 66.7,99.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="107.2" cy="144.6" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M130.1,158.5 Q148.9,200.8 113.9,170.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M44.4,66.5 Q61.7,102.9 37.7,70.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M66.7,99.8 C75.0,112.2 82.3,137.2 82.3,137.2 C82.3,137.2 63.6,119.1 56.6,105.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="92.5" cy="154.4" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M113.9,170.5 Q128.5,214.4 96.6,180.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M37.7,70.6 Q51.3,108.5 30.6,73.9" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M56.6,105.8 C63.6,119.1 68.4,144.6 68.4,144.6 C68.4,144.6 51.7,124.7 45.9,110.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="77.0" cy="162.7" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M96.6,180.8 Q106.9,226.0 78.5,189.4" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M30.6,73.9 Q40.4,113.0 23.2,76.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M45.9,110.9 C51.7,124.7 53.9,150.6 53.9,150.6 C53.9,150.6 39.2,129.2 34.8,114.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="60.6" cy="169.5" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M78.5,189.4 Q84.2,235.4 59.5,196.2" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M23.2,76.6 Q29.2,116.4 15.6,78.5" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M34.8,114.8 C39.2,129.2 38.9,155.2 38.9,155.2 C38.9,155.2 26.3,132.4 23.4,117.7" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="43.7" cy="174.6" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M59.5,196.2 Q60.7,242.5 40.0,201.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M15.6,78.5 Q17.6,118.7 7.8,79.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M23.4,117.7 C26.3,132.4 23.5,158.3 23.5,158.3 C23.5,158.3 13.2,134.3 11.8,119.4" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="26.4" cy="178.1" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M40.0,201.1 Q36.7,247.3 20.1,204.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M7.8,79.6 Q5.9,119.9 0.0,80.0" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M11.8,119.4 C13.2,134.3 7.9,159.8 7.9,159.8 C7.9,159.8 0.0,135.0 0.0,120.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="8.8" cy="179.8" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M20.1,204.0 Q12.3,249.7 0.0,205.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+</svg>
+</div>
+
+      <div class="hero-corner-decor corner-top-right" aria-hidden="true">
+<svg viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="300" cy="0" r="45" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<circle cx="300" cy="0" r="80" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22" stroke-dasharray="3,4"/>
+<circle cx="300" cy="0" r="120" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<circle cx="300" cy="0" r="160" stroke="#C88E28" stroke-width="1.2" fill="none" opacity="0.22"/>
+<circle cx="300" cy="0" r="205" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22" stroke-dasharray="3,4"/>
+<circle cx="300" cy="0" r="250" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<circle cx="300" cy="0" r="295" stroke="#C88E28" stroke-width="0.8" fill="none" opacity="0.22"/>
+<path d="M300.0,80.0 Q294.1,119.9 292.2,79.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M300.0,120.0 C300.0,135.0 292.1,159.8 292.1,159.8 C292.1,159.8 286.8,134.3 288.2,119.4" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="291.2" cy="179.8" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M300.0,205.0 Q287.7,249.7 279.9,204.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M292.2,79.6 Q282.4,118.7 284.4,78.5" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M288.2,119.4 C286.8,134.3 276.5,158.3 276.5,158.3 C276.5,158.3 273.7,132.4 276.6,117.7" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="273.6" cy="178.1" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M279.9,204.0 Q263.3,247.3 260.0,201.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M284.4,78.5 Q270.8,116.4 276.8,76.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M276.6,117.7 C273.7,132.4 261.1,155.2 261.1,155.2 C261.1,155.2 260.8,129.2 265.2,114.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="256.3" cy="174.6" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M260.0,201.1 Q239.3,242.5 240.5,196.2" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M276.8,76.6 Q259.6,113.0 269.4,73.9" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M265.2,114.8 C260.8,129.2 246.1,150.6 246.1,150.6 C246.1,150.6 248.3,124.7 254.1,110.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="239.4" cy="169.5" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M240.5,196.2 Q215.8,235.4 221.5,189.4" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M269.4,73.9 Q248.7,108.5 262.3,70.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M254.1,110.9 C248.3,124.7 231.6,144.6 231.6,144.6 C231.6,144.6 236.4,119.1 243.4,105.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="223.0" cy="162.7" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M221.5,189.4 Q193.1,226.0 203.4,180.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M262.3,70.6 Q238.3,102.9 255.6,66.5" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M243.4,105.8 C236.4,119.1 217.7,137.2 217.7,137.2 C217.7,137.2 225.0,112.2 233.3,99.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="207.5" cy="154.4" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M203.4,180.8 Q171.5,214.4 186.1,170.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M255.6,66.5 Q228.5,96.4 249.2,61.8" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M233.3,99.8 C225.0,112.2 204.7,128.5 204.7,128.5 C204.7,128.5 214.4,104.4 223.9,92.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="192.8" cy="144.6" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M186.1,170.5 Q151.1,200.8 169.9,158.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M249.2,61.8 Q219.4,88.9 243.4,56.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M223.9,92.8 C214.4,104.4 192.6,118.6 192.6,118.6 C192.6,118.6 204.5,95.5 215.1,84.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="179.1" cy="133.4" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M169.9,158.5 Q132.1,185.2 155.0,145.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M243.4,56.6 Q211.1,80.6 238.2,50.8" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M215.1,84.9 C204.5,95.5 181.4,107.4 181.4,107.4 C181.4,107.4 195.6,85.6 207.2,76.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="166.6" cy="120.9" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M155.0,145.0 Q114.8,167.9 141.5,130.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M238.2,50.8 Q203.6,71.5 233.5,44.4" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M207.2,76.1 C195.6,85.6 171.5,95.3 171.5,95.3 C171.5,95.3 187.8,75.0 200.2,66.7" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="155.4" cy="107.2" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M141.5,130.1 Q99.2,148.9 129.5,113.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M233.5,44.4 Q197.1,61.7 229.4,37.7" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M200.2,66.7 C187.8,75.0 162.8,82.3 162.8,82.3 C162.8,82.3 180.9,63.6 194.2,56.6" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="145.6" cy="92.5" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M129.5,113.9 Q85.6,128.5 119.2,96.6" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M229.4,37.7 Q191.5,51.3 226.1,30.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M194.2,56.6 C180.9,63.6 155.4,68.4 155.4,68.4 C155.4,68.4 175.3,51.7 189.1,45.9" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="137.3" cy="77.0" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M119.2,96.6 Q74.0,106.9 110.6,78.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M226.1,30.6 Q187.0,40.4 223.4,23.2" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M189.1,45.9 C175.3,51.7 149.4,53.9 149.4,53.9 C149.4,53.9 170.8,39.2 185.2,34.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="130.5" cy="60.6" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M110.6,78.5 Q64.6,84.2 103.8,59.5" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M223.4,23.2 Q183.6,29.2 221.5,15.6" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M185.2,34.8 C170.8,39.2 144.8,38.9 144.8,38.9 C144.8,38.9 167.6,26.3 182.3,23.4" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="125.4" cy="43.7" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M103.8,59.5 Q57.5,60.7 98.9,40.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M221.5,15.6 Q181.3,17.6 220.4,7.8" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M182.3,23.4 C167.6,26.3 141.7,23.5 141.7,23.5 C141.7,23.5 165.7,13.2 180.6,11.8" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="121.9" cy="26.4" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M98.9,40.0 Q52.7,36.7 96.0,20.1" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+<path d="M220.4,7.8 Q180.1,5.9 220.0,0.0" stroke="#C88E28" stroke-width="0.9" fill="rgba(200,142,40,0.03)" opacity="0.25"/>
+<path d="M180.6,11.8 C165.7,13.2 140.2,7.9 140.2,7.9 C140.2,7.9 165.0,0.0 180.0,0.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.2"/>
+<circle cx="120.2" cy="8.8" r="1.5" fill="#C88E28" opacity="0.25"/>
+<path d="M96.0,20.1 Q50.3,12.3 95.0,0.0" stroke="#C88E28" stroke-width="0.9" fill="none" opacity="0.18"/>
+</svg>
+</div>
+
+      <!-- Bottom Heritage Silhouette & Maroon Mandala Corner -->
+      <div class="hero-bottom-monuments" aria-hidden="true">
+        <svg class="monument-skyline" viewBox="0 0 800 130" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Soft Architectural Watermark -->
+  <g fill="#DEC8AC" opacity="0.45">
+    <!-- Left Pavilion Arches -->
+    <path d="M0,130 L15,130 L15,95 L22,95 L22,82 C22,78 28,74 35,70 C37,60 37,50 40,46 C43,50 43,60 45,70 C52,74 58,78 58,82 L58,95 L65,95 L65,130 Z"/>
+    <!-- Minaret 1 -->
+    <path d="M90,130 L98,130 L98,70 L95,70 L95,66 L98,66 L98,35 C98,32 101,28 103,24 C105,28 108,32 108,35 L108,66 L111,66 L111,70 L108,70 L108,130 Z"/>
+    <!-- Dome 1 (Charminar / Nizami) -->
+    <path d="M125,130 L125,92 L132,92 L132,78 C132,70 140,62 152,55 C158,40 162,28 168,22 C174,28 178,40 184,55 C196,62 204,70 204,78 L204,92 L211,92 L211,130 Z"/>
+    <!-- Minaret 2 -->
+    <path d="M225,130 L233,130 L233,65 L230,65 L230,61 L233,61 L233,30 C233,27 236,23 238,19 C240,23 243,27 243,30 L243,61 L246,61 L246,65 L243,65 L243,130 Z"/>
+    <!-- Grand Central Nizami Dome -->
+    <path d="M265,130 L265,96 L274,96 L274,72 C274,64 284,52 298,44 C308,26 314,14 322,8 C330,14 336,26 346,44 C360,52 370,64 370,72 L370,96 L379,96 L379,130 Z"/>
+    <!-- Minaret 3 -->
+    <path d="M400,130 L408,130 L408,68 L405,68 L405,64 L408,64 L408,33 C408,30 411,26 413,22 C415,26 418,30 418,33 L418,64 L421,64 L421,68 L418,68 L418,130 Z"/>
+    <!-- Right Symmetrical Dome -->
+    <path d="M440,130 L440,94 L448,94 L448,76 C448,68 458,60 470,54 C476,38 480,26 486,20 C492,26 496,38 502,54 C514,60 524,68 524,76 L524,94 L532,94 L532,130 Z"/>
+    <!-- Grand Charminar Arch Structure -->
+    <path d="M550,130 L558,130 L558,60 L568,60 L568,40 C568,36 572,30 578,25 C582,30 588,36 588,40 L588,60 L598,60 L598,130 Z"/>
+    <path d="M620,130 L620,90 C620,80 630,70 644,62 C652,44 658,30 664,24 C670,30 676,44 684,62 C698,70 708,80 708,90 L708,130 Z"/>
+    <path d="M730,130 L730,96 L738,96 L738,75 C738,68 746,60 758,52 C764,38 768,26 774,20 C780,26 784,38 790,52 C800,60 800,68 800,75 L800,130 Z"/>
+  </g>
+</svg>
+
+        <div class="hero-maroon-corner">
+          <svg viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,260 C150,260 260,180 360,30 L360,260 Z" fill="#651D2B"/>
+            <circle cx="360" cy="260" r="160" stroke="#D99A32" stroke-width="1.3" opacity="0.4"/>
+            <circle cx="360" cy="260" r="130" stroke="#D99A32" stroke-width="1.5" stroke-dasharray="4,5" opacity="0.45"/>
+            <circle cx="360" cy="260" r="100" stroke="#D99A32" stroke-width="1.3" opacity="0.45"/>
+            <circle cx="360" cy="260" r="70" stroke="#D99A32" stroke-width="1.5" opacity="0.5"/>
+            <path d="M360 160 C310 160 270 200 270 260 C295 220 330 180 360 160z" fill="#D99A32" opacity="0.25"/>
+            <path d="M360 200 C325 200 295 230 295 260 C315 235 340 210 360 200z" fill="#D99A32" opacity="0.3"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="container hero-home-grid">
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-tagline-pill">
+            <span class="pill-sparkle">✦</span> A LITTLE SPICE. A LOT OF TRADITION.
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-top">THE TRUE TASTE OF</span>
+            <span class="hero-title-accent">DUM BIRYANI.</span>
+            <div class="hero-title-flourish" aria-hidden="true">
+              <svg viewBox="0 0 310 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 18 C65 25, 160 26, 305 7 C215 15, 120 16, 28 11 C18 10, 10 13, 8 18 Z" fill="url(#goldFlourishGrad)"/>
+                <defs>
+                  <linearGradient id="goldFlourishGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#D99A32"/>
+                    <stop offset="50%" stop-color="#E5AA42"/>
+                    <stop offset="100%" stop-color="#C28420"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </h1>
+
+          <p class="hero-lead">
+            Experience the aroma of authentic spices, perfectly layered rice and slow-cooked biryani made with tradition and passion.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="menu.html" class="btn btn-hero-primary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              ORDER YOUR BIRYANI
+            </a>
+            <a href="menu.html" class="btn btn-hero-outline">
+              EXPLORE OUR MENU <i class="bi bi-arrow-right" style="margin-left: 6px;"></i>
+            </a>
+          </div>
+
+          <!-- Trust Strip: 3 Items with Icons and Divider Lines -->
+          <div class="hero-trust-strip">
+            <div class="hero-trust-item">
+              <div class="trust-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="30" height="30" fill="none">
+                  <path d="M16 4v3M13 5c0 1 1.5 2 3 2s3-1 3-2" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                  <ellipse cx="16" cy="12" rx="10" ry="2.5" stroke="#D99A32" stroke-width="1.8"/>
+                  <path d="M6 12c.5 6 4 11 10 11s9.5-5 10-11" stroke="#D99A32" stroke-width="1.8"/>
+                  <path d="M5 13c-2 0-3 1.2-3 2.5s1 2.5 3 2.5M27 13c2 0 3 1.2 3 2.5s-1 2.5-3 2.5" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M8 23c2 2 14 2 16 0" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="trust-text-wrap">
+                <strong>100% Dum Cooked</strong>
+                <span>Slow sealed in copper handis</span>
+              </div>
+            </div>
+
+            <div class="trust-strip-divider" aria-hidden="true"></div>
+
+            <div class="hero-trust-item">
+              <div class="trust-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                  <path d="M26 6C18 7 8 13 8 23c0 2 1 3 3 3 10 0 16-10 17-18 0-1-1-2-2-2z" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8 23c6-6 11-10 17-15" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="trust-text-wrap">
+                <strong>Fragrant Spices</strong>
+                <span>House-ground garam masala</span>
+              </div>
+            </div>
+
+            <div class="trust-strip-divider" aria-hidden="true"></div>
+
+            <div class="hero-trust-item">
+              <div class="trust-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="28" height="28" fill="none">
+                  <path d="M7 26c0-6 4-11 10-12" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                  <path d="M17 14C17 8 12 5 7 6c-1 5 2 10 7 10" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 14c3-6 9-7 12-4 0 5-4 9-9 8" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 14v12" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="trust-text-wrap">
+                <strong>Fresh Daily</strong>
+                <span>Zero frozen ingredients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card with Overlapping Badges -->
+        <div class="hero-visual-wrap">
+          <div class="hero-frame">
+            <img src="assets/images/hero-biryani-exact.jpg" alt="Authentic Hyderabadi Chicken Dum Biryani in Traditional Copper Handi" width="620" height="520">
+          </div>
+
+          <!-- Badge 1: Top-Left (Freshly Prepared Pill) -->
+          <div class="hero-floating-badge badge-freshly-prepared">
+            <span class="badge-icon" aria-hidden="true" style="display:flex; align-items:center;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <path d="M20 4c-6 1-13 6-13 14 0 1.5 1 2.5 2.5 2.5 8 0 13-7 14-14 0-.8-.8-1.7-1.7-1.7" stroke="#D99A32" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 18c5-5 9-8 14-12" stroke="#D99A32" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="badge-text">Freshly Prepared</span>
+          </div>
+
+          <!-- Badge 2: Center-Right (Authentic Dum Cooking Card) -->
+          <div class="hero-floating-badge badge-dum-cooking">
+            <span class="badge-icon" aria-hidden="true" style="display:flex; align-items:center;">
+              <svg viewBox="0 0 28 28" width="22" height="22" fill="none">
+                <path d="M14 3v3M11 4c0 1 1.5 1.5 3 1.5s3-.5 3-1.5" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                <ellipse cx="14" cy="10" rx="9" ry="2.2" stroke="#D99A32" stroke-width="1.8"/>
+                <path d="M5 10c.5 5 3.5 9.5 9 9.5s8.5-4.5 9-9.5" stroke="#D99A32" stroke-width="1.8"/>
+                <path d="M4 11c-1.8 0-2.5 1-2.5 2s.7 2 2.5 2M24 11c1.8 0 2.5 1 2.5 2s-.7 2-2.5 2" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M7 19.5c2 1.5 12 1.5 14 0" stroke="#D99A32" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div class="badge-text-stack">
+              <span>Authentic</span>
+              <span>Dum Cooking</span>
+            </div>
+          </div>
+
+          <!-- Badge 3: Bottom-Left (Made With Tradition Card) -->
+          <div class="hero-floating-badge badge-tradition">
+            <span class="badge-icon" aria-hidden="true" style="display:flex; align-items:center;">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#D99A32">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </span>
+            <div class="badge-text-stack">
+              <span>Made With</span>
+              <span>Tradition</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 2 — SIGNATURE BIRYANI COLLECTION (Rule 12)
+         ===================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="eyebrow">Culinary Masterpieces</span>
+          <h2 class="section-title">OUR SIGNATURE BIRYANI SELECTION</h2>
+          <p class="section-subtitle">
+            Every serving brings together carefully selected ingredients, fragrant rice and traditional cooking techniques.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <!-- Item 1: Hyderabadi Chicken Dum Biryani -->
+          <article class="dish-card">
+            <div class="dish-media">
+              <img src="assets/images/1.jpg" alt="Hyderabadi Chicken Dum Biryani" loading="lazy">
+              <span class="diet-badge diet-nonveg"><span class="diet-icon"></span> Non-Veg</span>
+              <button class="fav-toggle-btn active" onclick="toggleFavorite('item-1', this)" aria-label="Favorite"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Hyderabadi Chicken Dum Biryani</h3>
+                <span class="dish-price">₹360</span>
+              </div>
+              <p class="dish-desc">Aged basmati rice infused with saffron, caramelized onions and tender chicken slow-cooked in sealed clay handis.</p>
+              <div class="dish-footer">
+                <span class="dish-tag">Chef Special</span>
+                <button class="btn btn-primary btn-sm" onclick="addToCart('item-1')"><i class="bi bi-bag-plus"></i> Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Royal Mutton Biryani -->
+          <article class="dish-card">
+            <div class="dish-media">
+              <img src="assets/images/2.jpg" alt="Royal Mutton Biryani" loading="lazy">
+              <span class="diet-badge diet-nonveg"><span class="diet-icon"></span> Non-Veg</span>
+              <button class="fav-toggle-btn active" onclick="toggleFavorite('item-2', this)" aria-label="Favorite"><i class="bi bi-heart-fill"></i></button>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Royal Mutton Biryani</h3>
+                <span class="dish-price">₹490</span>
+              </div>
+              <p class="dish-desc">Succulent baby goat morsels steeped in cardamom broth and layered with saffron-kissed long basmati grains.</p>
+              <div class="dish-footer">
+                <span class="dish-tag">Royal Heritage</span>
+                <button class="btn btn-primary btn-sm" onclick="addToCart('item-2')"><i class="bi bi-bag-plus"></i> Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Egg Special Biryani -->
+          <article class="dish-card">
+            <div class="dish-media">
+              <img src="assets/images/egg-biryani.jpg" alt="Egg Special Biryani" loading="lazy">
+              <span class="diet-badge diet-nonveg"><span class="diet-icon"></span> Non-Veg</span>
+              <button class="fav-toggle-btn" onclick="toggleFavorite('item-3', this)" aria-label="Favorite"><i class="bi bi-heart"></i></button>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Egg Special Biryani</h3>
+                <span class="dish-price">₹280</span>
+              </div>
+              <p class="dish-desc">Golden pan-roasted farm eggs tossed with aromatic handi masala, mint sprigs and seasoned basmati rice.</p>
+              <div class="dish-footer">
+                <span class="dish-tag">Popular Pick</span>
+                <button class="btn btn-primary btn-sm" onclick="addToCart('item-3')"><i class="bi bi-bag-plus"></i> Add to Order</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Vegetable Dum Biryani -->
+          <article class="dish-card">
+            <div class="dish-media">
+              <img src="assets/images/veg-biryani.jpg" alt="Vegetable Dum Biryani" loading="lazy">
+              <span class="diet-badge diet-veg"><span class="diet-icon"></span> Veg</span>
+              <button class="fav-toggle-btn" onclick="toggleFavorite('item-4', this)" aria-label="Favorite"><i class="bi bi-heart"></i></button>
+            </div>
+            <div class="dish-body">
+              <div class="dish-header-row">
+                <h3 class="dish-title">Vegetable Dum Biryani</h3>
+                <span class="dish-price">₹290</span>
+              </div>
+              <p class="dish-desc">Crisp farm vegetables, garden peas, roasted paneer cubes and whole spices infused with delicate kewra essence.</p>
+              <div class="dish-footer">
+                <span class="dish-tag">Vegetarian Pure</span>
+                <button class="btn btn-primary btn-sm" onclick="addToCart('item-4')"><i class="bi bi-bag-plus"></i> Add to Order</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 3 — OUR COOKING TRADITION (Rule 12: Split Layout)
+         ===================================================================== -->
+    <section class="section section-alt">
+      <div class="container tradition-split">
+        <div class="tradition-image-stack">
+          <div class="tradition-main-img">
+            <img src="assets/images/chef-dum.jpg" alt="Indian Chef slow dum cooking in copper handi" loading="lazy">
+          </div>
+          <div class="tradition-caption-box">
+            <h4 style="color: var(--saffron); font-size: 1.1rem; margin-bottom: 4px;">100% Traditional Handi Method</h4>
+            <p style="font-size: 0.86rem; color: rgba(255, 244, 229, 0.88); margin: 0;">Sealed with wheat dough to trap every trace of aromatic steam and natural meat juices.</p>
+          </div>
+        </div>
+
+        <div class="tradition-content">
+          <span class="eyebrow">Centuries of Craft</span>
+          <h2 class="section-title">THE SECRET IS IN THE DUM.</h2>
+          <p class="section-subtitle">
+            Dum pukht is an ancient royal culinary technique where food is cooked over a very gentle charcoal flame in heavy-bottomed vessels sealed airtight with dough.
+          </p>
+
+          <div class="tradition-pillars">
+            <div class="tradition-pillar">
+              <div class="tradition-pillar-icon"><i class="bi bi-flower1"></i></div>
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">Carefully Selected Basmati Rice</h4>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Two-year aged extra-long grain rice that elongates beautifully without breaking.</p>
+              </div>
+            </div>
+
+            <div class="tradition-pillar">
+              <div class="tradition-pillar-icon"><i class="bi bi-fire"></i></div>
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">Freshly Prepared Spice Blends</h4>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Stone-ground green cardamom, star anise, shahi jeera, mace and pure Kashmiri saffron.</p>
+              </div>
+            </div>
+
+            <div class="tradition-pillar">
+              <div class="tradition-pillar-icon"><i class="bi bi-clock-history"></i></div>
+              <div>
+                <h4 style="font-size: 1.05rem; margin-bottom: 4px;">Slow Dum Cooking</h4>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin: 0;">Cooked untouched for hours over dying coals to lock in moisture, depth and aroma.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 4 — MORE THAN JUST BIRYANI (Rule 12: Horizontal Editorial Layout)
+         ===================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; max-width: 100%;">
+          <div>
+            <span class="eyebrow">Accompaniments & Delicacies</span>
+            <h2 class="section-title" style="margin-bottom: 0;">MORE THAN JUST BIRYANI</h2>
+          </div>
+          <a href="menu.html" class="btn btn-outline">
+            EXPLORE FULL MENU <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="editorial-side-list">
+          <!-- Item 1: Chicken 65 -->
+          <div class="editorial-side-item">
+            <div class="editorial-side-thumb">
+              <img src="assets/images/chicken-65.jpg" alt="Chicken 65 Starter" loading="lazy">
+            </div>
+            <div>
+              <div class="editorial-side-meta">
+                <h3 style="font-size: 1.15rem; margin: 0;">Chicken 65</h3>
+                <span class="dish-price" style="font-size: 1.1rem;">₹260</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Crispy spiced chicken bites tossed with fresh curry leaves and slit green chillies.</p>
+              <button class="btn btn-outline btn-sm" onclick="addToCart('item-8')"><i class="bi bi-bag-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Item 2: Tandoori Chicken -->
+          <div class="editorial-side-item">
+            <div class="editorial-side-thumb">
+              <img src="assets/images/10.jpg" alt="Tandoori Chicken Half" loading="lazy">
+            </div>
+            <div>
+              <div class="editorial-side-meta">
+                <h3 style="font-size: 1.15rem; margin: 0;">Tandoori Chicken</h3>
+                <span class="dish-price" style="font-size: 1.1rem;">₹310</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Clay oven roasted bone-in chicken marinated in spiced yogurt and mustard oil.</p>
+              <button class="btn btn-outline btn-sm" onclick="addToCart('item-10')"><i class="bi bi-bag-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Item 3: Chicken Tikka -->
+          <div class="editorial-side-item">
+            <div class="editorial-side-thumb">
+              <img src="assets/images/3.jpg" alt="Chicken Tikka" loading="lazy">
+            </div>
+            <div>
+              <div class="editorial-side-meta">
+                <h3 style="font-size: 1.15rem; margin: 0;">Chicken Tikka</h3>
+                <span class="dish-price" style="font-size: 1.1rem;">₹290</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Smoky boneless chicken chunks steeped in Kashmiri deggi mirch and roasted cumin.</p>
+              <button class="btn btn-outline btn-sm" onclick="addToCart('item-9')"><i class="bi bi-bag-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Item 4: Mutton Curry -->
+          <div class="editorial-side-item">
+            <div class="editorial-side-thumb">
+              <img src="assets/images/11.jpg" alt="Rich Mutton Curry" loading="lazy">
+            </div>
+            <div>
+              <div class="editorial-side-meta">
+                <h3 style="font-size: 1.15rem; margin: 0;">Mutton Curry</h3>
+                <span class="dish-price" style="font-size: 1.1rem;">₹440</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Slow-braised mutton in a rich velvety onion and cashew gravy with green cardamom.</p>
+              <button class="btn btn-outline btn-sm" onclick="addToCart('item-12')"><i class="bi bi-bag-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Item 5: Butter Naan -->
+          <div class="editorial-side-item">
+            <div class="editorial-side-thumb">
+              <img src="assets/images/3.jpg" alt="Butter Naan Bread" loading="lazy">
+            </div>
+            <div>
+              <div class="editorial-side-meta">
+                <h3 style="font-size: 1.15rem; margin: 0;">Butter Naan</h3>
+                <span class="dish-price" style="font-size: 1.1rem;">₹60</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Clay-oven baked leavened flatbread brushed with pure melted farm butter.</p>
+              <button class="btn btn-outline btn-sm" onclick="addToCart('item-15')"><i class="bi bi-bag-plus"></i> Add</button>
+            </div>
+          </div>
+
+          <!-- Item 6: Cooling Raita & Salan -->
+          <div class="editorial-side-item">
+            <div class="editorial-side-thumb">
+              <img src="assets/images/4.jpg" alt="Onion Raita and Mirchi Salan" loading="lazy">
+            </div>
+            <div>
+              <div class="editorial-side-meta">
+                <h3 style="font-size: 1.15rem; margin: 0;">Onion Raita</h3>
+                <span class="dish-price" style="font-size: 1.1rem;">₹60</span>
+              </div>
+              <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px;">Chilled whipped curd with diced onions, fresh mint leaves and roasted jeera.</p>
+              <button class="btn btn-outline btn-sm" onclick="addToCart('item-18')"><i class="bi bi-bag-plus"></i> Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5 — THE NIZAMI GASTRONOMY DOCTRINE (Rule 12: Deep Maroon Section)
+         ===================================================================== -->
+    <section class="section section-maroon section-nizami-pillars" id="why-choose-us">
+      <!-- Ambient Decorative Jaali Backdrop -->
+      <div class="pillars-backdrop-jaali" aria-hidden="true"></div>
+
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-header center">
+          <span class="eyebrow eyebrow-gold-glow">
+            <span class="eyebrow-star">✦</span> THE NIZAMI CULINARY DOCTRINE <span class="eyebrow-star">✦</span>
+          </span>
+          <h2 class="section-title pillars-title">
+            SIX SACRED PILLARS. <span class="pillars-title-gold">ZERO SHORTCUTS.</span>
+          </h2>
+          <div class="ornamental-gold-divider" aria-hidden="true">
+            <span class="divider-line"></span>
+            <span class="divider-crest">❖</span>
+            <span class="divider-line"></span>
+          </div>
+          <p class="section-subtitle pillars-subtitle">
+            Every handi sealed at Biryani House honors centuries-old royal Nizami tenets—where recipes remain sacred, embers burn slow, and genuine dum cooking is never compromised.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <article class="pillar-card">
+            <div class="pillar-card-arch-accent" aria-hidden="true"></div>
+            <span class="pillar-watermark-num">01</span>
+            <div class="pillar-crest-medallion">
+              <div class="pillar-crest-inner">
+                <i class="bi bi-journal-bookmark-fill"></i>
+              </div>
+            </div>
+            <div class="pillar-pill">PILLAR I • HERITAGE ARCHIVES</div>
+            <h3 class="pillar-heading">Time-Honored Nizami Recipes</h3>
+            <p class="pillar-text">
+              Directly descended from the royal kitchens of the Hyderabad Nizams. Authentic hand-pounded spices, cold-pressed oils, and zero artificial coloring, preservatives, or MSG.
+            </p>
+            <div class="pillar-footer">
+              <span class="pillar-guarantee"><i class="bi bi-patch-check-fill"></i> Authentic Gharana Formula</span>
+            </div>
+          </article>
+
+          <!-- Pillar 2 -->
+          <article class="pillar-card">
+            <div class="pillar-card-arch-accent" aria-hidden="true"></div>
+            <span class="pillar-watermark-num">02</span>
+            <div class="pillar-crest-medallion">
+              <div class="pillar-crest-inner">
+                <i class="bi bi-flower1"></i>
+              </div>
+            </div>
+            <div class="pillar-pill">PILLAR II • NO SHORTCUTS</div>
+            <h3 class="pillar-heading">Pristine Daily Procurement</h3>
+            <p class="pillar-text">
+              100% fresh, tender halal meats marinated 12 hours prior with whole spices. Pure Kashmiri saffron, house-churned ghee, and 2-year aged Extra Long Grain Basmati rice.
+            </p>
+            <div class="pillar-footer">
+              <span class="pillar-guarantee"><i class="bi bi-patch-check-fill"></i> Zero Frozen Meat Ever</span>
+            </div>
+          </article>
+
+          <!-- Pillar 3 (Featured) -->
+          <article class="pillar-card featured-pillar">
+            <div class="pillar-featured-badge">★ SIGNATURE MASTER CRAFT ★</div>
+            <div class="pillar-card-arch-accent" aria-hidden="true"></div>
+            <span class="pillar-watermark-num">03</span>
+            <div class="pillar-crest-medallion">
+              <div class="pillar-crest-inner">
+                <i class="bi bi-fire"></i>
+              </div>
+            </div>
+            <div class="pillar-pill">PILLAR III • LIVE EMBERS</div>
+            <h3 class="pillar-heading">Authentic Purdah Dum Cooking</h3>
+            <p class="pillar-text">
+              Heavy copper and clay handis sealed airtight with wheat dough (Purdah). Slow-simmered over live charcoal embers so every grain absorbs rich meat juices and delicate floral aroma.
+            </p>
+            <div class="pillar-footer">
+              <span class="pillar-guarantee"><i class="bi bi-patch-check-fill"></i> 100% Slow Coal Simmered</span>
+            </div>
+          </article>
+
+          <!-- Pillar 4 -->
+          <article class="pillar-card">
+            <div class="pillar-card-arch-accent" aria-hidden="true"></div>
+            <span class="pillar-watermark-num">04</span>
+            <div class="pillar-crest-medallion">
+              <div class="pillar-crest-inner">
+                <i class="bi bi-trophy-fill"></i>
+              </div>
+            </div>
+            <div class="pillar-pill">PILLAR IV • ROYAL HOSPITALITY</div>
+            <h3 class="pillar-heading">Regal Dastarkhwan Portions</h3>
+            <p class="pillar-text">
+              True Nizami hospitality means nobody leaves unsatisfied. Sumptuous, full platefuls generous with succulent meat, paired with thick spiced mirchi ka salan and refreshing curd raita.
+            </p>
+            <div class="pillar-footer">
+              <span class="pillar-guarantee"><i class="bi bi-patch-check-fill"></i> Hearty Servings & Sides</span>
+            </div>
+          </article>
+
+          <!-- Pillar 5 -->
+          <article class="pillar-card">
+            <div class="pillar-card-arch-accent" aria-hidden="true"></div>
+            <span class="pillar-watermark-num">05</span>
+            <div class="pillar-crest-medallion">
+              <div class="pillar-crest-inner">
+                <i class="bi bi-shield-check"></i>
+              </div>
+            </div>
+            <div class="pillar-pill">PILLAR V • KITCHEN SANCTITY</div>
+            <h3 class="pillar-heading">Sanctified Kitchen Hygiene</h3>
+            <p class="pillar-text">
+              Spotless commercial kitchens operating under strict hospital-grade hygiene. Segregated preparation stations, color-coded boards, and dedicated cauldrons for vegetarian recipes.
+            </p>
+            <div class="pillar-footer">
+              <span class="pillar-guarantee"><i class="bi bi-patch-check-fill"></i> Segregated Veg & Non-Veg</span>
+            </div>
+          </article>
+
+          <!-- Pillar 6 -->
+          <article class="pillar-card">
+            <div class="pillar-card-arch-accent" aria-hidden="true"></div>
+            <span class="pillar-watermark-num">06</span>
+            <div class="pillar-crest-medallion">
+              <div class="pillar-crest-inner">
+                <i class="bi bi-box2-heart-fill"></i>
+              </div>
+            </div>
+            <div class="pillar-pill">PILLAR VI • PIPING HOT PROMISE</div>
+            <h3 class="pillar-heading">Multi-Layer Aroma-Lock Seal</h3>
+            <p class="pillar-text">
+              Custom thermal packaging traps heat, natural moisture, and fragrant saffron steam—guaranteeing your biryani arrives piping hot, as if lifted straight from the burning handi.
+            </p>
+            <div class="pillar-footer">
+              <span class="pillar-guarantee"><i class="bi bi-patch-check-fill"></i> 45-Min Heat & Aroma Lock</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- Royal Khansama Guarantee Ribbon -->
+        <div class="pillars-bottom-seal">
+          <div class="bottom-seal-crest">
+            <i class="bi bi-patch-check-fill"></i>
+          </div>
+          <div class="bottom-seal-text">
+            <strong>The Royal Khansama Guarantee:</strong>
+            <span>If your biryani is not intensely aromatic, perfectly spiced, and piping hot upon arrival, we will replace your handi immediately with no questions asked.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 6 — FAMILY AND PARTY ORDERS (Rule 12)
+         ===================================================================== -->
+    <section class="section">
+      <div class="container">
+        <div class="party-banner-grid">
+          <div class="party-banner-media">
+            <img src="assets/images/7.jpg" alt="Family gathering enjoying biryani feast" loading="lazy">
+          </div>
+          <div class="party-banner-content">
+            <span class="eyebrow">Celebrations & Bulk Orders</span>
+            <h2 class="section-title">BRING THE FEAST TO YOUR CELEBRATION.</h2>
+            <p class="section-subtitle" style="margin-bottom: 24px;">
+              From family gatherings to special celebrations, let us make your occasions more memorable with freshly prepared biryani.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; font-size: 0.95rem; color: var(--text-secondary);">
+              <li><i class="bi bi-check2-circle" style="color: var(--saffron); margin-inline-end: 8px;"></i> Large handi party packs serving 10 to 500+ guests</li>
+              <li><i class="bi bi-check2-circle" style="color: var(--saffron); margin-inline-end: 8px;"></i> Complimentary starters, salan, raita & dessert pairings</li>
+              <li><i class="bi bi-check2-circle" style="color: var(--saffron); margin-inline-end: 8px;"></i> Punctual doorstep delivery & setup assistance</li>
+            </ul>
+            <a href="party-orders.html" class="btn btn-primary">
+              <i class="bi bi-calendar-event"></i> PLAN YOUR PARTY ORDER
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- =====================================================================
+         SECTION 6.5 — GASTRONOMIC RATINGS & GUEST TASTING NOTES (Rule 12)
+         ===================================================================== -->
+    <section class="section ratings-showcase-section" id="guest-ratings">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header center">
+          <span class="eyebrow"><i class="bi bi-star-fill" style="color: var(--saffron);"></i> Verified Gastronomic Acclaim</span>
+          <h2 class="section-title">THE DUM SEAL OF EXCELLENCE</h2>
+          <p class="section-subtitle">
+            Over 18,400+ feasts served with unwavering tradition. Here is what real connoisseurs, families, and critics savour about our slow-cooked handis.
+          </p>
+        </div>
+
+        <!-- Grand Scoreboard Bar -->
+        <div class="ratings-scoreboard">
+          <div class="rating-primary-score">
+            <div class="score-big">4.9<span class="score-max">/5</span></div>
+            <div class="score-stars">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <span class="score-count"><i class="bi bi-patch-check-fill" style="color: var(--saffron);"></i> 18,450+ Verified Reviews</span>
+          </div>
+
+          <!-- Culinary Metrics Breakdown -->
+          <div class="ratings-metrics-row">
+            <div class="metric-chip">
+              <span class="metric-label">Aromatic Dum Steam</span>
+              <div class="metric-bar-wrap">
+                <div class="metric-bar-fill" style="width: 98%;"></div>
+              </div>
+              <span class="metric-val">5.0 ★</span>
+            </div>
+            <div class="metric-chip">
+              <span class="metric-label">Meat Tenderness</span>
+              <div class="metric-bar-wrap">
+                <div class="metric-bar-fill" style="width: 96%;"></div>
+              </div>
+              <span class="metric-val">4.9 ★</span>
+            </div>
+            <div class="metric-chip">
+              <span class="metric-label">Spicing & Heritage Dum</span>
+              <div class="metric-bar-wrap">
+                <div class="metric-bar-fill" style="width: 97%;"></div>
+              </div>
+              <span class="metric-val">4.9 ★</span>
+            </div>
+            <div class="metric-chip">
+              <span class="metric-label">Piping Hot Delivery</span>
+              <div class="metric-bar-wrap">
+                <div class="metric-bar-fill" style="width: 95%;"></div>
+              </div>
+              <span class="metric-val">4.8 ★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 Gastronomic Tasting Review Cards -->
+        <div class="ratings-cards-grid grid-3">
+          
+          <!-- Card 1 -->
+          <article class="tasting-review-card">
+            <div class="tasting-card-header">
+              <div class="reviewer-profile">
+                <div class="reviewer-avatar">RK</div>
+                <div>
+                  <h4 class="reviewer-name">Rahul K.</h4>
+                  <span class="reviewer-meta"><i class="bi bi-geo-alt"></i> Jubilee Hills &bull; Sunday Family Feast</span>
+                </div>
+              </div>
+              <div class="tasting-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+
+            <div class="tasting-dish-tag">
+              <i class="bi bi-bag-heart-fill"></i> Ordered: <strong>Royal Mutton Dum Handi (Family Pack)</strong>
+            </div>
+
+            <p class="tasting-quote">
+              "The moment we cracked open the wheat dough seal at our dining table, that <mark class="taste-mark">intoxicating saffron and cardamom cloud</mark> filled the whole living room. The goat meat was so tender it slipped off the bone without a fork. Absolutely zero greasy aftertaste!"
+            </p>
+
+            <div class="tasting-card-footer">
+              <span class="platform-badge"><i class="bi bi-google"></i> Google Verified Review</span>
+              <span class="taste-timestamp">2 days ago</span>
+            </div>
+          </article>
+
+          <!-- Card 2 (Featured Handi Seal) -->
+          <article class="tasting-review-card featured">
+            <div class="tasting-seal-badge"><i class="bi bi-award-fill"></i> Connoisseur's Choice</div>
+            <div class="tasting-card-header">
+              <div class="reviewer-profile">
+                <div class="reviewer-avatar gold-avatar">PS</div>
+                <div>
+                  <h4 class="reviewer-name">Dr. Priya Sharma</h4>
+                  <span class="reviewer-meta"><i class="bi bi-geo-alt"></i> Banjara Hills &bull; 15-Handi Party Order</span>
+                </div>
+              </div>
+              <div class="tasting-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+
+            <div class="tasting-dish-tag">
+              <i class="bi bi-bag-heart-fill"></i> Ordered: <strong>Chicken Dum Biryani & Chicken 65 Platters</strong>
+            </div>
+
+            <p class="tasting-quote">
+              "Ordered catering for 60 guests for my husband's 40th birthday. Every single copper handi arrived <mark class="taste-mark">smoking hot with the dough intact</mark>. Even our elderly Hyderabadi relatives claimed it matched the old royal wedding dastarkhwan!"
+            </p>
+
+            <div class="tasting-card-footer">
+              <span class="platform-badge"><i class="bi bi-patch-check-fill" style="color: var(--saffron);"></i> Verified Catered Order</span>
+              <span class="taste-timestamp">1 week ago</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="tasting-review-card">
+            <div class="tasting-card-header">
+              <div class="reviewer-profile">
+                <div class="reviewer-avatar">AV</div>
+                <div>
+                  <h4 class="reviewer-name">Anand V.</h4>
+                  <span class="reviewer-meta"><i class="bi bi-geo-alt"></i> Gachibowli &bull; Corporate Dum Lunch</span>
+                </div>
+              </div>
+              <div class="tasting-stars">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+
+            <div class="tasting-dish-tag">
+              <i class="bi bi-bag-heart-fill"></i> Ordered: <strong>Subz Veg Handi & Royal Rose Falooda</strong>
+            </div>
+
+            <p class="tasting-quote">
+              "Being purely vegetarian, getting genuine dum flavour without artificial essences is next to impossible. Biryani House nailed it! The <mark class="taste-mark">paneer was golden, kewra subtle</mark>, and the segregated packaging gave us total peace of mind."
+            </p>
+
+            <div class="tasting-card-footer">
+              <span class="platform-badge"><i class="bi bi-google"></i> Google Verified Review</span>
+              <span class="taste-timestamp">3 days ago</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Foodie Praise Sentiment Badges -->
+        <div class="ratings-praise-cloud">
+          <span class="praise-title"><i class="bi bi-chat-heart-fill" style="color: var(--saffron);"></i> Frequently Praised Flavours:</span>
+          <span class="praise-tag">✨ #AuthenticDoughSeal <span>(5.0★)</span></span>
+          <span class="praise-tag">🍗 #MuttonFallingOffBone <span>(4.9★)</span></span>
+          <span class="praise-tag">🔥 #CharcoalDumAroma <span>(5.0★)</span></span>
+          <span class="praise-tag">🥘 #ZeroGreasyAftertaste <span>(4.9★)</span></span>
+          <span class="praise-tag">🌶️ #MirchiKaSalanPairing <span>(4.8★)</span></span>
+          <span class="praise-tag">🚚 #HotHandiDelivery <span>(4.9★)</span></span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 7 — FINAL CTA (Rule 12)
+         ===================================================================== -->
+    <section class="final-cta-section">
+      <img src="assets/images/9.jpg" alt="Appetizing biryani background" class="final-cta-bg">
+      <div class="container final-cta-inner">
+        <span class="eyebrow" style="color: var(--saffron);">Ready for a Delicious Feast?</span>
+        <h2>YOUR NEXT BIRYANI CRAVING STARTS HERE.</h2>
+        <p>
+          Discover your favourite flavours and enjoy a delicious biryani experience slow-cooked with tradition and served with love.
+        </p>
+        <div class="cta-btn-row">
+          <a href="menu.html" class="btn btn-gold">
+            <i class="bi bi-bag-check"></i> ORDER NOW
+          </a>
+          <a href="contact.html" class="btn btn-outline-light">
+            <i class="bi bi-geo-alt"></i> CONTACT US
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Public Cart Drawer (Rule 11 & 34) -->
+  <div class="mobile-drawer-overlay" id="cartDrawerOverlay"></div>
+  <aside class="cart-drawer" id="publicCartDrawer" aria-label="Customer Cart">
+    <div class="cart-drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="bi bi-bag-heart-fill" style="color: var(--saffron); font-size: 1.25rem;"></i>
+        <h3 style="margin: 0;">Your Order Cart</h3>
+      </div>
+      <button class="icon-btn" id="cartDrawerClose" aria-label="Close cart" style="background: none; border-color: rgba(255,244,229,0.3); color: var(--cream);">
+        <i class="bi bi-x-lg"></i>
+      </button>
+    </div>
+
+    <div class="cart-drawer-body">
+      <div id="cartEmptyState" style="text-align: center; padding-block: 60px 20px;">
+        <i class="bi bi-basket" style="font-size: 3rem; color: var(--saffron);"></i>
+        <h4 style="margin-block: 16px 6px;">Your cart is currently empty</h4>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px;">Add aromatic biryanis and succulent starters from our menu to get started.</p>
+        <a href="menu.html" class="btn btn-primary btn-sm" onclick="closeCartDrawer()">Browse Menu</a>
+      </div>
+      <div id="cartItemsList"></div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display: none;">
+      <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 8px;">
+        <span>Item Subtotal:</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
+        <span>Packaging & Delivery (Demo):</span>
+        <strong id="cartDeliveryFee">₹50</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 1.15rem; font-weight: 700; color: var(--text-heading); padding-top: 10px; border-top: 1px solid var(--border-strong); margin-bottom: 18px;">
+        <span>Grand Total:</span>
+        <strong id="cartGrandTotal" style="color: var(--maroon);">₹0</strong>
+      </div>
+      <a href="dashboard.html#cart" class="btn btn-primary" style="width: 100%;">
+        PROCEED TO ORDER <i class="bi bi-arrow-right"></i>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Footer (Rule 7 & 41) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-logo" style="margin-bottom: 16px;">
+          <div class="brand-logo-mark">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 9c-.5-1.5 0-3 1-4M24 9.5c0-2 1-3.5 1-4.8M27 9c.5-1.5 0-3-1-4" stroke="#FFC043" stroke-width="1.8" stroke-linecap="round"/>
+              <ellipse cx="24" cy="18" rx="14" ry="3.5" fill="#D99A32"/>
+              <path d="M21 15.5c1-1.5 5-1.5 6 0" stroke="#FFF4E5" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M10 18c.6 7 5.2 13.5 14 13.5s13.4-6.5 14-13.5H10z" fill="#D99A32"/>
+              <path d="M9 19c-3.2 0-5.5 2.2-5.5 5s2.3 5 5.5 5M39 19c3.2 0 5.5 2.2 5.5 5s-2.3 5-5.5 5" stroke="#FFDF9E" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M12 32.5c4 2.8 19 2.8 24 0" stroke="#FFC043" stroke-width="2" stroke-linecap="round"/>
+              <path d="M15 35.5h18" stroke="#FFF4E5" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+            </svg>
+          </div>
+          <span class="brand-name" style="color: var(--cream);">BIRYANI HOUSE</span>
+        </div>
+        <p style="font-size: 0.88rem; color: rgba(255, 244, 229, 0.82); line-height: 1.7; margin-bottom: 18px;">
+          A Little Spice. A Lot Of Tradition.<br>
+          Authentic dum biryani and festive dining crafted with rich spices, sealed copper handis and heritage hospitality.
+        </p>
+        <div class="footer-social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube">
+            <i class="bi bi-youtube"></i>
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore Menu</h4>
+        <nav class="footer-links">
+          <a href="menu.html">Chicken Dum Biryani</a>
+          <a href="menu.html">Royal Mutton Biryani</a>
+          <a href="menu.html">Vegetable Handi Biryani</a>
+          <a href="menu.html">South Indian Starters</a>
+          <a href="menu.html">Fresh Tandoor Breads</a>
+          <a href="menu.html">Gulab Jamun &amp; Desserts</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hospitality</h4>
+        <nav class="footer-links">
+          <a href="about.html">Our Dum Story</a>
+          <a href="services.html">Dine-In &amp; Takeaway</a>
+          <a href="party-orders.html">Catering Enquiries</a>
+          <a href="dashboard.html">Customer Dashboard</a>
+          <a href="login.html">Demo Member Login</a>
+          <a href="contact.html">Contact Us</a>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h4>Restaurant Location</h4>
+        <div class="footer-contact-list">
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <span>104 Heritage Avenue, Food District, Hyderabad, Telangana 500033</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">
+              <i class="bi bi-clock-fill"></i>
+            </div>
+            <div class="footer-contact-info">
+              <span>Open Daily: 11:30 AM – 11:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 BIRYANI HOUSE. All rights reserved.</div>
+      <div>Crafted for Authentic Dining &amp; Takeaway Services.</div>
+    </div>
+  </footer>
+
+  <!-- Master JavaScript File (Rule 7) -->
+  
+  <!-- =====================================================================
+       WELCOME OFFER POPUP MODAL (Option B)
+       ===================================================================== -->
+  <div class="offer-modal-overlay" id="welcomeOfferModal" aria-hidden="true">
+    <div class="offer-modal-card" role="dialog" aria-modal="true" aria-labelledby="offerModalTitle">
+      <button class="offer-modal-close" id="closeOfferModal" aria-label="Close welcome offer">
+        <i class="bi bi-x-lg"></i>
+      </button>
+
+      <div class="offer-modal-media">
+        <img src="assets/images/hero-biryani-exact.jpg" alt="Special Royal Dum Biryani Feast" loading="lazy">
+        <span class="offer-modal-pill">
+          <i class="bi bi-sparkles"></i> WELCOME FEAST OFFER
+        </span>
+      </div>
+
+      <div class="offer-modal-body">
+        <span class="offer-eyebrow"><i class="bi bi-fire" style="color: var(--saffron);"></i> First Order Exclusive</span>
+        <h3 class="offer-title" id="offerModalTitle">FLAT 20% OFF</h3>
+        <p class="offer-desc">
+          Savour the authentic aroma of sealed copper handi biryanis. Enjoy a special welcome discount on your first online order.
+        </p>
+
+        <!-- Interactive Voucher Box -->
+        <div class="offer-coupon-box">
+          <div class="coupon-code-meta">
+            <span class="coupon-label">USE PROMO CODE</span>
+            <span class="coupon-code" id="welcomeCouponCode">DUMFEAST20</span>
+          </div>
+          <button class="coupon-copy-btn" id="copyCouponBtn" title="Copy coupon code">
+            <i class="bi bi-copy"></i> <span>COPY CODE</span>
+          </button>
+        </div>
+        <span class="coupon-subtext">Save up to ₹150 &bull; Minimum order ₹399 &bull; Valid today</span>
+
+        <div class="offer-modal-actions">
+          <a href="menu.html" class="btn btn-primary offer-claim-btn" id="claimOfferBtn">
+            <i class="bi bi-bag-check-fill"></i> ORDER NOW WITH 20% OFF
+          </a>
+          <button class="offer-dismiss-link" id="dismissOfferLink">No thanks, I'll explore first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
