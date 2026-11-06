@@ -1298,38 +1298,23 @@ function initRtlSystem() {
 
 
   document.querySelectorAll(".rtl-toggle-btn").forEach(btn => {
-
-
-
     btn.addEventListener("click", () => {
-
-
-
+      document.documentElement.classList.add("switching-dir");
       AppState.dir = AppState.dir === "rtl" ? "ltr" : "rtl";
-
-
-
       localStorage.setItem("bh_dir", AppState.dir);
-
-
-
       document.documentElement.setAttribute("dir", AppState.dir);
-
-
-
       updateRtlToggleButtons();
-
-
-
       showToast(`Layout flipped to ${AppState.dir.toUpperCase()}`);
-
-
-
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          document.documentElement.classList.remove("switching-dir");
+        });
+      });
     });
-
-
-
   });
+
+
+
 
 
 

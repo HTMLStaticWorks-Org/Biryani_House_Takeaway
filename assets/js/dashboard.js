@@ -181,23 +181,37 @@ function initDashboardThemeAndRTL() {
   document.documentElement.setAttribute("data-theme", savedTheme);
   document.documentElement.setAttribute("dir", savedDir);
 
+  const updateThemeIcons = (theme) => {
+    document.querySelectorAll(".dash-theme-toggle i").forEach(icon => {
+      icon.className = theme === "dark" ? "bi bi-moon-stars" : "bi bi-sun-fill";
+    });
+  };
+  updateThemeIcons(savedTheme);
+
   document.querySelectorAll(".dash-theme-toggle").forEach(btn => {
     btn.addEventListener("click", () => {
       const curr = document.documentElement.getAttribute("data-theme");
       const next = curr === "dark" ? "light" : "dark";
       document.documentElement.setAttribute("data-theme", next);
       localStorage.setItem("bh_theme", next);
+      updateThemeIcons(next);
       showToast(`Switched to ${next === "dark" ? "Dark" : "Light"} Mode`);
     });
   });
 
   document.querySelectorAll(".dash-rtl-toggle").forEach(btn => {
     btn.addEventListener("click", () => {
+      document.documentElement.classList.add("switching-dir");
       const curr = document.documentElement.getAttribute("dir");
       const next = curr === "rtl" ? "ltr" : "rtl";
       document.documentElement.setAttribute("dir", next);
       localStorage.setItem("bh_dir", next);
       showToast(`Layout changed to ${next.toUpperCase()}`);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          document.documentElement.classList.remove("switching-dir");
+        });
+      });
     });
   });
 }
@@ -362,25 +376,33 @@ function renderDashboardCart() {
 
   container.innerHTML = cart.map(item => `
     <tr>
-      <td data-label="Item" style="display: flex; align-items: center; gap: 14px;">
-        <img src="${item.image}" alt="${item.name}" style="width: 54px; height: 46px; border-radius: 4px; object-fit: cover;">
-        <div>
-          <strong>${item.name}</strong>
-          <div style="font-size: 0.78rem; color: var(--text-muted);">₹${item.price} each</div>
-        </div>
+      <td data-label="Item" class="cart-td-item">
+        <span class="td-value cart-item-flex">
+          <img src="${item.image}" alt="${item.name}" style="width: 52px; height: 44px; border-radius: 4px; object-fit: cover;">
+          <div>
+            <strong>${item.name}</strong>
+            <div style="font-size: 0.78rem; color: var(--text-muted);">₹${item.price} each</div>
+          </div>
+        </span>
       </td>
       <td data-label="Quantity">
-        <div class="qty-control">
-          <button class="qty-btn" onclick="updateDashCartQty('${item.id}', -1)">−</button>
-          <span class="qty-val">${item.qty}</span>
-          <button class="qty-btn" onclick="updateDashCartQty('${item.id}', 1)">+</button>
-        </div>
+        <span class="td-value">
+          <div class="qty-control">
+            <button class="qty-btn" onclick="updateDashCartQty('${item.id}', -1)" aria-label="Decrease quantity">−</button>
+            <span class="qty-val">${item.qty}</span>
+            <button class="qty-btn" onclick="updateDashCartQty('${item.id}', 1)" aria-label="Increase quantity">+</button>
+          </div>
+        </span>
       </td>
-      <td data-label="Total" style="font-weight: 700; color: var(--maroon);">₹${item.price * item.qty}</td>
+      <td data-label="Total">
+        <span class="td-value" style="font-weight: 700; color: var(--maroon);">₹${item.price * item.qty}</span>
+      </td>
       <td data-label="Action">
-        <button class="btn btn-outline btn-sm" onclick="removeCartItem('${item.id}'); renderDashboardCart();" style="padding: 6px 10px;">
-          <i class="bi bi-trash3"></i>
-        </button>
+        <span class="td-value">
+          <button class="btn btn-outline btn-sm" onclick="removeCartItem('${item.id}'); renderDashboardCart();" style="padding: 6px 10px;" aria-label="Remove item">
+            <i class="bi bi-trash3"></i>
+          </button>
+        </span>
       </td>
     </tr>
   `).join("");
@@ -449,22 +471,23 @@ function renderOrdersView() {
   if (!container) return;
 
   container.innerHTML = DashState.orders.map(order => `
-    <div class="tracking-card" style="margin-bottom: 20px;">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px; margin-bottom: 14px;">
-        <div>
-          <span style="font-size: 0.76rem; font-weight: 700; color: var(--saffron); text-transform: uppercase;">Order Number</span>
-          <h3 style="font-size: 1.3rem;">#${order.id}</h3>
-          <span style="font-size: 0.8rem; color: var(--text-muted);"><i class="bi bi-calendar3"></i> ${order.date}</span>
+    <div class="dash-order-card">
+      <div class="dash-order-header">
+        <div class="dash-order-meta">
+          <span class="dash-order-tag">Order Number</span>
+          <h3 class="dash-order-id">#${order.id}</h3>
+          <span class="dash-order-date"><i class="bi bi-calendar3"></i> ${order.date}</span>
         </div>
-        <div style="text-align: end;">
+        <div class="dash-order-status-block">
           <span class="status-badge ${order.status === 'Preparing' ? 'status-preparing' : 'status-delivered'}">${order.status}</span>
-          <div style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700; color: var(--text-heading); margin-top: 6px;">₹${order.total}</div>
+          <div class="dash-order-price">₹${order.total}</div>
         </div>
       </div>
-      <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px dashed var(--border-color);">
-        <strong>Ordered Items:</strong> ${order.items}
-      </p>
-      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+      <div class="dash-order-details">
+        <span class="dash-order-items-label">Ordered Items:</span>
+        <span class="dash-order-items-val">${order.items}</span>
+      </div>
+      <div class="dash-order-actions">
         <button class="btn btn-outline btn-sm" onclick="viewOrderTracking('${order.id}')">
           <i class="bi bi-geo-alt"></i> Track Status
         </button>
@@ -566,17 +589,21 @@ function renderHistoryTable() {
 
   tableBody.innerHTML = DashState.orders.map(order => `
     <tr>
-      <td data-label="Order ID"><strong>#${order.id}</strong></td>
-      <td data-label="Date">${order.date}</td>
-      <td data-label="Items" style="max-width: 280px;">${order.items}</td>
-      <td data-label="Total" style="font-weight: 700; color: var(--maroon);">₹${order.total}</td>
+      <td data-label="Order ID"><span class="td-value"><strong>#${order.id}</strong></span></td>
+      <td data-label="Date"><span class="td-value">${order.date}</span></td>
+      <td data-label="Items"><span class="td-value td-items">${order.items}</span></td>
+      <td data-label="Total"><span class="td-value td-total">₹${order.total}</span></td>
       <td data-label="Status">
-        <span class="status-badge ${order.status === 'Preparing' ? 'status-preparing' : 'status-delivered'}">${order.status}</span>
+        <span class="td-value">
+          <span class="status-badge ${order.status === 'Preparing' ? 'status-preparing' : 'status-delivered'}">${order.status}</span>
+        </span>
       </td>
       <td data-label="Action">
-        <button class="btn btn-outline btn-sm" onclick="reorderItems('${order.id}')">
-          <i class="bi bi-arrow-repeat"></i> Reorder
-        </button>
+        <span class="td-value">
+          <button class="btn btn-outline btn-sm" onclick="reorderItems('${order.id}')">
+            <i class="bi bi-arrow-repeat"></i> Reorder
+          </button>
+        </span>
       </td>
     </tr>
   `).join("");
