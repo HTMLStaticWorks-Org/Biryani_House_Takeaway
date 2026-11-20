@@ -1005,11 +1005,33 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+.nav-actions > .icon-btn,
+.nav-actions > .rtl-toggle-btn,
+.nav-actions > .theme-toggle-btn,
+.nav-actions > .cart-toggle-btn,
+.nav-actions > .nav-order-btn {
+
+  height: 40px !important;
+
+  min-height: 40px !important;
+
+  max-height: 40px !important;
+
+  box-sizing: border-box !important;
+
+}
+
+
+
 .icon-btn {
 
   width: 40px;
 
   height: 40px;
+
+  min-height: 40px;
+
+  max-height: 40px;
 
   border-radius: var(--radius-sm);
 
@@ -1031,6 +1053,8 @@ h1, h2, h3, h4, h5, h6 {
 
   transition: all var(--transition);
 
+  box-sizing: border-box;
+
 }
 
 
@@ -1049,6 +1073,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .rtl-toggle-btn {
 
+  height: 40px;
+
+  min-height: 40px;
+
+  max-height: 40px;
+
   font-size: 0.75rem;
 
   font-weight: 700;
@@ -1058,6 +1088,14 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
 
   padding-inline: 10px;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
 
 }
 
@@ -1099,9 +1137,31 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-order-btn {
 
-  padding: 10px 20px;
+  height: 40px;
 
-  font-size: 0.82rem;
+  min-height: 40px;
+
+  max-height: 40px;
+
+  padding: 0 18px !important;
+
+  font-size: 0.82rem !important;
+
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  line-height: 1;
+
+  box-sizing: border-box;
+
+  border-radius: var(--radius-sm);
 
 }
 
@@ -1712,11 +1772,13 @@ h1, h2, h3, h4, h5, h6 {
 
   bottom: 0;
 
-  right: 120px;
+  left: 50%;
 
-  width: 780px;
+  transform: translateX(-50%);
 
-  max-width: 65%;
+  right: auto;
+
+  width: min(960px, 92vw);
 
   height: clamp(75px, 10.5vh, 100px);
 
@@ -2342,7 +2404,9 @@ h1, h2, h3, h4, h5, h6 {
 
   bottom: 22px;
 
-  left: 16px;
+  right: 16px;
+
+  left: auto;
 
   padding: 11px 18px;
 
@@ -2404,9 +2468,9 @@ h1, h2, h3, h4, h5, h6 {
 
 [dir="rtl"] .badge-tradition {
 
-  left: auto;
+  right: auto;
 
-  right: 16px;
+  left: 16px;
 
 }
 
@@ -2655,7 +2719,9 @@ h1, h2, h3, h4, h5, h6 {
 
     bottom: 12px;
 
-    left: 8px;
+    right: 8px;
+
+    left: auto;
 
   }
 
@@ -5560,6 +5626,8 @@ h1, h2, h3, h4, h5, h6 {
 
   border-color: rgba(217, 154, 50, 0.35);
 
+  color: #FFF4E5;
+
 }
 
 
@@ -5624,11 +5692,73 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+[data-theme="dark"] .dum-step-btn .step-btn-title {
+
+  color: rgba(255, 244, 229, 0.9);
+
+}
+
+
+
 .dum-step-btn:hover {
 
-  background: rgba(217, 154, 50, 0.12);
+  background: #FFF5E6;
+
+  border-color: var(--saffron);
 
   color: var(--maroon);
+
+}
+
+
+
+.dum-step-btn:hover .step-btn-title {
+
+  color: var(--maroon);
+
+}
+
+
+
+.dum-step-btn:hover .step-btn-num {
+
+  border-color: var(--saffron);
+
+  color: var(--maroon);
+
+}
+
+
+
+/* Dark Mode Tab Hover Fix: Solid Opaque Background & High Contrast Visible Text (Blocks Connecting Track Line) */
+
+[data-theme="dark"] .dum-step-btn:hover {
+
+  background: #36151E;
+
+  border-color: var(--saffron);
+
+  color: #FFFFFF;
+
+}
+
+
+
+[data-theme="dark"] .dum-step-btn:hover .step-btn-title {
+
+  color: #FFFFFF !important;
+
+}
+
+
+
+[data-theme="dark"] .dum-step-btn:hover .step-btn-num {
+
+  background: rgba(217, 154, 50, 0.28);
+
+  color: #FFC043;
+
+  border-color: var(--saffron);
 
 }
 
@@ -5643,6 +5773,18 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFF4E5 !important;
 
   box-shadow: 0 4px 16px rgba(101, 29, 43, 0.25);
+
+}
+
+
+
+[data-theme="dark"] .dum-step-btn.active {
+
+  background: #651D2B;
+
+  border-color: var(--saffron);
+
+  color: #FFF4E5 !important;
 
 }
 
@@ -5667,6 +5809,14 @@ h1, h2, h3, h4, h5, h6 {
 .dum-step-btn.active .step-btn-title {
 
   color: #FFF4E5;
+
+}
+
+
+
+[data-theme="dark"] .dum-step-btn.active .step-btn-title {
+
+  color: #FFF4E5 !important;
 
 }
 
@@ -7360,6 +7510,80 @@ h1, h2, h3, h4, h5, h6 {
 
   box-shadow: 0 0 0 3px var(--saffron-soft);
 
+}
+
+/* Custom Dropdown Select Styling with Shifted Leftward Arrow */
+select.form-control {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23888888' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m3 6 5 5 5-5'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 13px 9px;
+  padding-right: 44px;
+  cursor: pointer;
+}
+
+[data-theme="dark"] select.form-control {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m3 6 5 5 5-5'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] select.form-control:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23D99A32' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m3 6 5 5 5-5'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] select.form-control option {
+  background-color: #200B10;
+  color: #FFF4E5;
+}
+
+[dir="rtl"] select.form-control {
+  background-position: left 18px center;
+  padding-left: 44px;
+  padding-right: 16px;
+}
+
+/* Date Input & Dark Mode Calendar Picker Indicator Visibility */
+input[type="date"].form-control,
+input[type="date"] {
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  padding: 2px;
+  margin-inline-end: 6px;
+  border-radius: 4px;
+  opacity: 0.8;
+  transition: opacity var(--transition), filter var(--transition);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+[data-theme="dark"] input[type="date"].form-control,
+[data-theme="dark"] input[type="date"],
+html[data-theme="dark"] input[type="date"] {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator,
+[data-theme="dark"] .form-control[type="date"]::-webkit-calendar-picker-indicator,
+html[data-theme="dark"] #partyEventDate::-webkit-calendar-picker-indicator {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
+  cursor: pointer;
+  margin-inline-end: 6px;
+}
+
+[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator:hover,
+[data-theme="dark"] .form-control[type="date"]::-webkit-calendar-picker-indicator:hover,
+html[data-theme="dark"] #partyEventDate::-webkit-calendar-picker-indicator:hover {
+  filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
 }
 
 
@@ -11638,14 +11862,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Top Occasion Selector Ribbon */
 .occasion-nav-ribbon {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 8px;
   margin-bottom: 24px;
   background: var(--bg-surface);
   border: 1.5px solid var(--border-color);
-  padding: 8px;
+  padding: 6px;
   border-radius: 20px;
   box-shadow: 0 4px 18px rgba(101, 29, 43, 0.05);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 [data-theme="dark"] .occasion-nav-ribbon {
@@ -11657,8 +11883,8 @@ h1, h2, h3, h4, h5, h6 {
 .occasion-tab {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 14px;
+  gap: 6px;
+  padding: 7px 8px;
   border-radius: 14px;
   background: transparent;
   border: 1.5px solid transparent;
@@ -11667,6 +11893,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   color: var(--text-heading);
   position: relative;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .occasion-tab:hover {
@@ -11687,22 +11916,24 @@ h1, h2, h3, h4, h5, h6 {
 
 .occasion-tab-num {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--saffron);
-  opacity: 0.8;
+  opacity: 0.75;
+  flex-shrink: 0;
 }
 
 .occasion-tab-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 8px;
   background: rgba(217, 154, 50, 0.12);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--saffron);
-  font-size: 1.15rem;
+  font-size: 0.95rem;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
@@ -11717,11 +11948,14 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  min-width: 0;
 }
 
 .occasion-tab-text strong {
-  font-size: 0.84rem;
-  line-height: 1.25;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.2;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -11729,9 +11963,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .occasion-tab-text small {
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: var(--text-secondary);
-  margin-top: 2px;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Dynamic Occasion Stage */
@@ -12059,8 +12296,8 @@ h1, h2, h3, h4, h5, h6 {
   border-color: rgba(217, 154, 50, 0.35);
 }
 
-/* Responsive Occasion Theater Design: 3x2 (3 and 3) Tab Buttons Grid for Tablet & Mobile */
-@media (max-width: 1024px) {
+/* Responsive Occasion Theater Design: 3x2 (3 and 3) Tab Buttons Grid for Tablet, Laptop & Mobile */
+@media (max-width: 1280px) {
   .occasion-nav-ribbon {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
@@ -12069,6 +12306,8 @@ h1, h2, h3, h4, h5, h6 {
     overflow-x: visible !important;
     border-radius: 20px !important;
     margin-bottom: 24px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .occasion-nav-ribbon::-webkit-scrollbar {
@@ -12356,13 +12595,18 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-caption {
   padding: 16px 18px;
   background-color: var(--bg-surface);
-  text-align: center;
+  text-align: left;
   transition: background-color 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 4px;
   border-top: 1px solid var(--border-color);
+}
+
+[dir="rtl"] .gallery-caption {
+  text-align: right;
+  align-items: flex-end;
 }
 
 [data-theme="dark"] .gallery-caption {
@@ -12376,6 +12620,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.98rem;
   color: var(--text-heading);
   transition: color 0.3s ease;
+  text-align: left;
+}
+
+[dir="rtl"] .gallery-caption-title {
+  text-align: right;
 }
 
 .catering-gallery-card:hover .gallery-caption-title {
@@ -12388,6 +12637,11 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  text-align: left;
+}
+
+[dir="rtl"] .gallery-caption-sub {
+  text-align: right;
 }
 
 .gallery-caption-sub i {
